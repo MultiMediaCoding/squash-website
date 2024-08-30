@@ -1,0 +1,15 @@
+.box {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.icon {
+  width: 160px;
+  max-width: fit-content;
+  margin-inline: auto;
+  border-color: rgb(216, 216, 216);
+  border-width: 1px;
+  border-radius: 45px;
+}

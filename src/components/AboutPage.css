@@ -1,0 +1,22 @@
+.text {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 24px;
+}
+
+.img {
+  margin-bottom: 4px;
+}
+
+@media (max-width: 768px) {
+  .img {
+    width: 100vw;
+  }
+}
+
+@media (min-width: 768px) {
+  .img {
+    width: 60vw;
+  }
+}
