@@ -1,0 +1,9 @@
+.commentBox {
+  text-align: left;
+  width: 310px;
+  height: 210px;
+  padding: 20px;
+  border-width: 0.1px;
+  border-radius: 18px;
+  border-color: #afafaf;
+}

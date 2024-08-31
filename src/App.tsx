@@ -16,6 +16,7 @@ import toggle from "./assets/toggle.png";
 import mockup from "./assets/mockup.png";
 import { PhotoCarousel } from "./components/AppPreview/PhotoCarousel";
 import { MockupFeature } from "./components/AppPreview/MockupFeature";
+import { Comment } from "./components/AppPreview/Comment/Comment";
 
 export function Home() {
   const cards = [
