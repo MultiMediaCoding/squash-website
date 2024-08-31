@@ -13,7 +13,7 @@
   
   @media (min-width: 768px) {
     .img {
-        min-width: 30vw; 
+        min-width: 300px; 
         min-height: 250px;
     }
   }
