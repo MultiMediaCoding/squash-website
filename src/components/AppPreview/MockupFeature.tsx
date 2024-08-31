@@ -1,5 +1,5 @@
 import { CSSProperties, useEffect, useState } from "react";
-import { InfoElement } from "./InfoElement";
+import { InfoElement } from "../Common/InfoElement";
 import "./MockupFeature.css";
 
 export function MockupFeature({

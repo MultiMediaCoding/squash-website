@@ -1,20 +1,21 @@
 import "./App.css";
 import { CSSProperties } from "react";
 import { PresentationBox } from "./components/PresentationBox";
-import { DevelopersHeader } from "./components/DevelopersHeader";
-import { NavigationBar } from "./components/NavigationBar";
-import { AboutPage } from "./components/AboutPage";
+import { DevelopersHeader } from "./components/Home/DevelopersHeader";
+import { NavigationBar } from "./components/Navigation/NavigationBar";
+import { AboutPage } from "./components/About/AboutPage";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import iphone from "./assets/iphone.png";
-import { InfoElement } from "./components/InfoElement";
-import { FAQ } from "./components/FAQ";
-import { AppHeader } from "./components/AppHeader";
+import { InfoElement } from "./components/Common/InfoElement";
+import { FAQ } from "./components/Home/FAQ";
+import { AppHeader } from "./components/AppPreview/AppHeader";
 import isymbols from "./assets/isymbols.png";
-import FeatureCard from "./components/FeatureCard";
+import FeatureCard from "./components/AppPreview/FeatureCard";
 import toggle from "./assets/toggle.png";
-import { MockupFeature } from "./components/MockupFeature";
+
 import mockup from "./assets/mockup.png";
-import { PhotoCarousel } from "./components/PhotoCarousel";
+import { PhotoCarousel } from "./components/AppPreview/PhotoCarousel";
+import { MockupFeature } from "./components/AppPreview/MockupFeature";
 
 export function Home() {
   const cards = [

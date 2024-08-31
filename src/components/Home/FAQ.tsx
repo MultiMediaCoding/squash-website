@@ -3,7 +3,7 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "../components/ui/accordion";
+} from "../ui/accordion";
 
 export function FAQ() {
   const donateContent = `We welcome donations to support our company’s mission, and by "mission," we mean our quest for the finest champagne! Your contributions will help us enjoy only the best bubbles. Each donation gets us one step closer to that dream of toasting our success in style. Thank you for your support!`;
