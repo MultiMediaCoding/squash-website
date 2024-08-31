@@ -5,7 +5,7 @@ import "./DevelopersHeader.css";
 export function DevelopersHeader() {
   return (
     <div className="centered">
-      <img className={"img"} src={developers} alt="Developer" />
+      <img className={"developerHeader"} src={developers} alt="Developer" />
       <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
         Two young developers
       </h1>
