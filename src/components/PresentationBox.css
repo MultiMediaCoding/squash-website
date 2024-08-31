@@ -1,39 +1,41 @@
-.phoneBox {
+.presentationBox {
+  margin-top: 100px;
+  text-align: left;
+}
+
+.imageBox {
   background-color: #f0f0f0;
   border-radius: 12px;
   padding: 12px;
+  margin-bottom: 20px;
 }
 
-.exploreProjectsSection {
-  text-align: left;
-  margin-top: 100px;
-}
-
-.text {
+.content {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 26px;
 }
 
 @media (max-width: 768px) {
-  .exploreProjectsSection {
+  .presentationBox {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 12px;
   }
+  .right {
+    display: none;
+  }
 }
 
 @media (min-width: 768px) {
-  .phoneBox {
+  .imageBox {
     width: 50%;
   }
-  .text {
-    margin-left: 40px;
-  }
-  .exploreProjectsSection {
+  .presentationBox {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 50px;
   }
 }

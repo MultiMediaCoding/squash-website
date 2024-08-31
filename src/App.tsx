@@ -1,11 +1,11 @@
 import "./App.css";
-import { AppHeader } from "./components/AppHeader";
-import { ExploreProjectsSection } from "./components/ExploreProjectsSection";
-import { LandingSlogan } from "./components/LandingSlogan";
+import { CSSProperties } from "react";
+import { PresentationBox } from "./components/PresentationBox";
+import { DevelopersHeader } from "./components/DevelopersHeader";
 import { NavigationBar } from "./components/NavigationBar";
-import isymbols from "./assets/isymbols.png";
 import { AboutPage } from "./components/AboutPage";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import iphone from "./assets/iphone.png";
 
 /*<AppHeader
         name={"iSymbols"}
@@ -24,12 +24,42 @@ export function About() {
   );
 }
 
+const cards = [
+  {
+    image: iphone,
+    title: "iSymbols",
+    subtitle: "The best icon library",
+    description:
+      "iSymbols is the best icon library in the world. It has a wide variety of icons that you can use in your projects.",
+    buttonDestination: "/about",
+    alignItems: "left",
+  },
+  {
+    image: iphone,
+    title: "Hidden Desk",
+    subtitle: "Declutter your desktop",
+    description:
+      "iSymbols is the best icon library in the world. It has a wide variety of icons that you can use in your projects.",
+    buttonDestination: "/about",
+    alignItems: "right",
+  },
+];
+
 export function Home() {
   return (
     <div>
       <NavigationBar></NavigationBar>
-      <LandingSlogan></LandingSlogan>
-      <ExploreProjectsSection></ExploreProjectsSection>
+      <DevelopersHeader></DevelopersHeader>
+      {cards.map((card) => (
+        <PresentationBox
+          image={card.image}
+          title={card.title}
+          subtitle={card.subtitle}
+          description={card.description}
+          buttonDestination={card.buttonDestination}
+          alignment={card.alignItems as CSSProperties["textAlign"]}
+        ></PresentationBox>
+      ))}
     </div>
   );
 }
