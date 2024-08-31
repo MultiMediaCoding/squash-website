@@ -1,0 +1,20 @@
+.box {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  margin-left: -150px;
+  margin-right: -150px;
+  margin-top: -200px;
+  padding-top: 220px;
+  padding-bottom: 120px;
+  background-color: #f0f0f0;
+}
+
+.icon {
+  width: 160px;
+  max-width: fit-content;
+  margin-inline: auto;
+  border-color: rgb(216, 216, 216);
+  border-width: 1px;
+  border-radius: 45px;
+}

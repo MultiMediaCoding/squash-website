@@ -11,7 +11,7 @@ import {
 import squashLogo from "../assets/squash-logo.svg";
 import "./NavigationBar.css";
 
-export function NavigationBar() {
+export function NavigationBar({ backgroundColor = "bg-background" }) {
   return (
     <NavigationMenu>
       <NavigationMenuList>
@@ -20,23 +20,32 @@ export function NavigationBar() {
             <img className={"logo"} src={squashLogo} alt="Logo" />
           </Link>
         </NavigationMenuItem>
-        <NavigationMenuItem>
-          <Link href="https://google.de">
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+        <NavigationMenuItem className={"bg-currencustom"}>
+          <Link href="/apps">
+            <NavigationMenuLink
+              style={{ backgroundColor: backgroundColor }}
+              className={navigationMenuTriggerStyle()}
+            >
               Apps
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
           <Link href="https://google.de">
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+            <NavigationMenuLink
+              style={{ backgroundColor: backgroundColor }}
+              className={navigationMenuTriggerStyle()}
+            >
               Support
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
           <Link href="about">
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+            <NavigationMenuLink
+              style={{ backgroundColor: backgroundColor }}
+              className={navigationMenuTriggerStyle()}
+            >
               About
             </NavigationMenuLink>
           </Link>
