@@ -6,8 +6,6 @@ import { NavigationBar } from "./components/NavigationBar";
 import { AboutPage } from "./components/AboutPage";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import iphone from "./assets/iphone.png";
-import { CarouselDemo } from "./components/PhotoCarousel";
-
 
 /*<AppHeader
         name={"iSymbols"}
