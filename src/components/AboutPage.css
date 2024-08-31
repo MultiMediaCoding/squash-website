@@ -5,18 +5,19 @@
   gap: 24px;
 }
 
-.img {
-  margin-bottom: 4px;
+.photos {
+  display: flex;
+  margin-top: 30px;
 }
 
 @media (max-width: 768px) {
-  .img {
-    width: 100vw;
+  .photos {
+    gap: 30px
   }
 }
-
+ 
 @media (min-width: 768px) {
-  .img {
-    width: 60vw;
+  .photos {
+    gap: 110px
   }
 }

@@ -14,6 +14,7 @@ import FeatureCard from "./components/FeatureCard";
 import toggle from "./assets/toggle.png";
 import { MockupFeature } from "./components/MockupFeature";
 import mockup from "./assets/mockup.png";
+import { PhotoCarousel } from "./components/PhotoCarousel";
 
 export function Home() {
   const cards = [
@@ -84,6 +85,9 @@ function TestElement() {
         longTitle="Everything that makes iSymbols so unique"
         description="Interested in the native experiences we build for Apple platforms. Then take a look in our app collection!"
       ></InfoElement>
+      <br></br>
+      <br></br>
+      <PhotoCarousel></PhotoCarousel>
       <br></br>
       <br></br>
       <FeatureCard

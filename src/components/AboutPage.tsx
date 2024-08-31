@@ -1,5 +1,8 @@
 import "./AboutPage.css";
+import "./AboutPhoto.css";
 import founders from "../assets/founders.jpeg";
+import founders2 from "../assets/founders2.jpeg";
+import { AboutPhoto } from "./AboutPhoto";
 
 export function AboutPage() {
   return (
@@ -8,14 +11,16 @@ export function AboutPage() {
         About
       </h1>
       <p className="text-xl text-muted-foreground">
-        Made by a real person. App ahead is a software studio led and founded by
-        Martin Lexow. I craft opinionated apps that are honest and functional.
-        My work is informed by German Sachlichkeit.
+      Welcome to our company! We are a passionate team dedicated to delivering exceptional products and 
+      services to our customers. Our mission is to innovate, inspire, and exceed expectations in everything we do. 
+      We believe in the power of creativity, collaboration, and commitment to quality. With a focus on customer satisfaction, 
+      we strive to build long-lasting relationships and make a positive impact in our industry. Whether you’re a long-time supporter or new to our community, 
+      we’re excited to have you with us on this journey. Thank you for being a part of our story!
       </p>
-      <div>
-        <img className={"img"} src={founders} alt="Hans und Lovis 2016" />
-        <p className="text-sm text-muted-foreground">Hans und Lovis 2016</p>
-      </div>
+      <div className="photos">
+      <AboutPhoto image = {founders} subtitle = "Hans und Lovis 2016"></AboutPhoto>
+      <AboutPhoto image = {founders2} subtitle = "Hans und Lovis 2024"></AboutPhoto>
+    </div>
     </div>
   );
 }

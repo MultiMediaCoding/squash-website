@@ -1,0 +1,19 @@
+.img {
+    object-fit: cover;
+    object-position: 25% 25%; 
+    border-radius: 12px;
+  }
+  
+  @media (max-width: 768px) {
+    .img {
+        width: 200px; 
+        height: 200px; 
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .img {
+        min-width: 300px; 
+        min-height: 250px;
+    }
+  }
