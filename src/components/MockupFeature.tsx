@@ -1,22 +1,18 @@
-import "./PresentationBox.css";
 import { CSSProperties, useEffect, useState } from "react";
-import { Button } from "./ui/button";
-import { Link } from "react-router-dom";
 import { InfoElement } from "./InfoElement";
+import "./MockupFeature.css";
 
-export function PresentationBox({
+export function MockupFeature({
   image,
   title,
   subtitle,
   description,
-  buttonDestination,
   alignment,
 }: {
   image: string;
   title: string;
   subtitle: string;
   description: string;
-  buttonDestination: string;
   alignment: CSSProperties["textAlign"];
 }) {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
@@ -33,24 +29,19 @@ export function PresentationBox({
   }, []);
 
   return (
-    <div className="presentationBox">
+    <div className="mockupBox">
       {alignment == "left" || isMobile ? (
-        <img className={"imageBox"} src={image} />
+        <img className={"mockupImage"} src={image} />
       ) : null}
 
-      <div className="content">
-        <InfoElement
-          title={title}
-          longTitle={subtitle}
-          description={description}
-          textAlign="left"
-        ></InfoElement>
-        <Link to={buttonDestination}>
-          <Button style={{ width: "120px" }}>Learn More</Button>
-        </Link>
-      </div>
+      <InfoElement
+        title={title}
+        longTitle={subtitle}
+        description={description}
+        textAlign="left"
+      ></InfoElement>
       {alignment == "right" ? (
-        <img className={"imageBox right"} src={image} />
+        <img className={"mockupImage right"} src={image} />
       ) : null}
     </div>
   );
