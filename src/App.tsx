@@ -16,6 +16,8 @@ import toggle from "./assets/toggle.png";
 import mockup from "./assets/mockup.png";
 import { PhotoCarousel } from "./components/AppPreview/PhotoCarousel";
 import { MockupFeature } from "./components/AppPreview/MockupFeature";
+import { AppDetailTable } from "./components/Common/AppDetailTable";
+import { AppDownloadElement } from "./components/AppPreview/AppDownloadElement";
 
 export function Home() {
   const cards = [
@@ -84,7 +86,7 @@ function TestElement() {
       <InfoElement
         title="Description"
         longTitle="Everything that makes iSymbols so unique"
-        description="Interested in the native experiences we build for Apple platforms. Then take a look in our app collection!"
+        description="Keeps your Mac desktop tidy and hides all folders and documents wit just a Mousecklick."
       ></InfoElement>
       <br></br>
       <br></br>
@@ -103,6 +105,17 @@ function TestElement() {
         image={mockup}
         alignment="left"
       ></MockupFeature>
+      <br></br>
+      <br></br>
+      <AppDownloadElement></AppDownloadElement>
+      <br></br>
+      <br></br>
+      <AppDetailTable 
+      version="3.0" 
+      size="2GB" 
+      category="Utility"
+      price="$0.99"
+      ></AppDetailTable>
     </div>
   );
 }

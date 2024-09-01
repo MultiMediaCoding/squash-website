@@ -1,0 +1,21 @@
+
+.gray-table-font {
+    color: gray;
+    text-align: left;
+}
+
+.app-detail-table-container {
+    margin-left: 15px;
+  }
+  
+  .app-detail-title {
+    text-align: left;
+    font-weight: 700;
+    font-size: 1.20rem;
+    margin-bottom: 20px;
+    margin-left: 10px;
+  }
+  
+  .text-right {
+    text-align: right;
+  }
