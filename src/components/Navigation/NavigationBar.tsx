@@ -31,7 +31,7 @@ export function NavigationBar({ backgroundColor = "bg-background" }) {
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href="https://google.de">
+          <Link href="/support">
             <NavigationMenuLink
               style={{ backgroundColor: backgroundColor }}
               className={navigationMenuTriggerStyle()}

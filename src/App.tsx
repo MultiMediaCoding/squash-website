@@ -10,17 +10,16 @@ import { InfoElement } from "./components/Common/InfoElement";
 import { FAQ } from "./components/Home/FAQ";
 import { AppHeader } from "./components/AppPreview/AppHeader";
 import isymbols from "./assets/isymbols.png";
-import FeatureCard from "./components/AppPreview/FeatureCard";
-import toggle from "./assets/toggle.png";
 
 import mockup from "./assets/mockup.png";
 import { PhotoCarousel } from "./components/AppPreview/PhotoCarousel";
 import { MockupFeature } from "./components/AppPreview/MockupFeature";
 import { AppDetailTable } from "./components/Common/AppDetailTable";
 import { AppDownloadElement } from "./components/AppPreview/AppDownloadElement";
-import { Comment } from "./components/AppPreview/CommentSection/Comment/Comment";
 import { CommentSection } from "./components/AppPreview/CommentSection/CommentSection";
 import { OtherProducts } from "./components/AppPreview/OtherProducts/OtherProducts";
+import { SupportPage } from "./components/Support/SupportPage";
+import { FeatureCards } from "./components/AppPreview/FeatureCards/FeatureCards";
 
 export function Home() {
   const cards = [
@@ -58,18 +57,11 @@ export function Home() {
           alignment={card.alignItems as CSSProperties["textAlign"]}
         ></PresentationBox>
       ))}
+      <br></br>
+      <br></br>
       <FAQ></FAQ>
-    </div>
-  );
-}
-
-export function About() {
-  return (
-    <div>
-      <NavigationBar></NavigationBar>
       <br></br>
       <br></br>
-      <AboutPage></AboutPage>
     </div>
   );
 }
@@ -120,7 +112,7 @@ function TestElement() {
       <br></br>
       <br></br>
       <InfoElement
-        title="Description"
+        title="Icons Redefined"
         longTitle="Everything that makes iSymbols so unique"
         description="Keeps your Mac desktop tidy and hides all folders and documents wit just a Mousecklick."
       ></InfoElement>
@@ -129,11 +121,10 @@ function TestElement() {
       <PhotoCarousel></PhotoCarousel>
       <br></br>
       <br></br>
-      <FeatureCard
-        title="Card Title"
-        description="Card Description"
-        image={toggle}
-      ></FeatureCard>
+      <br></br>
+      <br></br>
+      <FeatureCards></FeatureCards>
+
       <MockupFeature
         title="4.000 Symbols"
         subtitle="Brose the Apple SF Symbol Database"
@@ -143,16 +134,27 @@ function TestElement() {
       ></MockupFeature>
       <br></br>
       <br></br>
+
+      <CommentSection comments={comments}></CommentSection>
+
+      <MockupFeature
+        title="Customize"
+        subtitle="Style your icons the way you like"
+        description="Adjust your symbol’s size, color, radius, or even add a shadow to fit your needs. When you’re ready to use it, simply export it with one tap and save it to your phones camera roll as an image."
+        image={mockup}
+        alignment="right"
+      ></MockupFeature>
+      <br></br>
+      <br></br>
       <AppDownloadElement></AppDownloadElement>
       <br></br>
       <br></br>
-      <AppDetailTable 
-      version="3.0" 
-      size="2GB" 
-      category="Utility"
-      price="$0.99"
+      <AppDetailTable
+        version="3.0"
+        size="2GB"
+        category="Utility"
+        price="$0.99"
       ></AppDetailTable>
-      <CommentSection comments={comments}></CommentSection>
       <br></br>
       <br></br>
       <OtherProducts></OtherProducts>
@@ -166,8 +168,8 @@ function App() {
       <div>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/test" element={<TestElement />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/support" element={<SupportPage />} />
           <Route path="/apps" element={<TestElement />} />
         </Routes>
       </div>

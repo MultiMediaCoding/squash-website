@@ -36,12 +36,12 @@ export function InfoElement({
         style={{
           fontSize: 18,
           color: "#AFAFAF",
-          paddingLeft: 40,
-          paddingRight: 40,
+          paddingLeft: textAlign == "center" ? 40 : 0,
+          paddingRight: textAlign == "center" ? 40 : 0,
         }}
       >
         {description}
-      </p>{" "}
+      </p>
     </div>
   );
 }

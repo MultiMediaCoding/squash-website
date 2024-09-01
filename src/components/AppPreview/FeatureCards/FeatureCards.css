@@ -1,0 +1,6 @@
+.featureCards {
+  display: flex;
+  gap: 2em;
+  flex-direction: row;
+  align-items: center;
+}
