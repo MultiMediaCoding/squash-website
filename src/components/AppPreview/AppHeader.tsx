@@ -14,7 +14,7 @@ export function AppHeader({
       <img className={"icon"} src={icon}></img>
       <h1
         style={{ marginTop: "29px" }}
-        className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl"
+        className="scroll-m-20 text-4xl font-bold tracking-tight lg:text-5xl"
       >
         {name}
       </h1>

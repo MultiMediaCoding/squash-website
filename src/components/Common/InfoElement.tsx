@@ -21,20 +21,27 @@ export function InfoElement({
     >
       <h1
         style={{ fontSize: 40, marginBottom: "18px" }}
-        className="scroll-m-20 text-4xl font-semibold tracking-tight lg:text-5xl"
+        className="scroll-m-20 text-4xl font-bold tracking-tight lg:text-5xl"
       >
         {" "}
         {title}
       </h1>
-
       <h4
         style={{ fontSize: 20 }}
         className="scroll-m-20 text-xl font-mediumbold tracking-tight"
       >
         {longTitle}
       </h4>
-      <p style={{ fontSize: 18, color: "#AFAFAF", paddingLeft: 40, paddingRight: 40 }}>
-  {description}
-</p>    </div>
+      <p
+        style={{
+          fontSize: 18,
+          color: "#AFAFAF",
+          paddingLeft: 40,
+          paddingRight: 40,
+        }}
+      >
+        {description}
+      </p>{" "}
+    </div>
   );
 }
