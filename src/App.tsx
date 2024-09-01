@@ -16,7 +16,9 @@ import toggle from "./assets/toggle.png";
 import mockup from "./assets/mockup.png";
 import { PhotoCarousel } from "./components/AppPreview/PhotoCarousel";
 import { MockupFeature } from "./components/AppPreview/MockupFeature";
-import { Comment } from "./components/AppPreview/Comment/Comment";
+import { Comment } from "./components/AppPreview/CommentSection/Comment/Comment";
+import { CommentSection } from "./components/AppPreview/CommentSection/CommentSection";
+import { OtherProducts } from "./components/AppPreview/OtherProducts/OtherProducts";
 
 export function Home() {
   const cards = [
@@ -39,6 +41,7 @@ export function Home() {
       alignItems: "right",
     },
   ];
+
   return (
     <div>
       <NavigationBar></NavigationBar>
@@ -70,6 +73,38 @@ export function About() {
 }
 
 function TestElement() {
+  const comments = [
+    {
+      title: "Fantastic Tool!",
+      description:
+        "This app has every icon I need for my projects. A must-have for designers!",
+      rating: 5,
+    },
+    {
+      title: "Very useful",
+      description:
+        "A great collection of SF Symbols, perfect for my app development needs.",
+      rating: 4,
+    },
+    {
+      title: "Love the simplicity!",
+      description:
+        "The app is straightforward and easy to navigate. Found all the symbols I was looking for in seconds.",
+      rating: 5,
+    },
+    {
+      title: "Could be better",
+      description:
+        "The icons are great, but I wish there were more customization options.",
+      rating: 3,
+    },
+    {
+      title: "Great for quick access",
+      description:
+        "Perfect app for quickly finding the right symbol. Saves me so much time!",
+      rating: 4,
+    },
+  ];
   return (
     <div>
       <NavigationBar backgroundColor="#F0F0F0"></NavigationBar>
@@ -104,6 +139,12 @@ function TestElement() {
         image={mockup}
         alignment="left"
       ></MockupFeature>
+      <br></br>
+      <br></br>
+      <CommentSection comments={comments}></CommentSection>
+      <br></br>
+      <br></br>
+      <OtherProducts></OtherProducts>
     </div>
   );
 }

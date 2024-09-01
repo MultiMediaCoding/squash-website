@@ -1,0 +1,11 @@
+.commentSection {
+  margin: 0 -100px 0 -100px;
+  padding: 32px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  background-color: #f1f1f1;
+  overflow: hidden;
+}
