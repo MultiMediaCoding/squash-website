@@ -14,7 +14,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
 }) => {
   return (
     <div className={"card"}>
-      <img className={"img"} src={image} />
+      <img className={"featureCardImg"} src={image} />
       <h4
         style={{ marginTop: "14px" }}
         className="scroll-m-20 text-xl font-semibold tracking-tight"

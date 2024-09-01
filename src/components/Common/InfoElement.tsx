@@ -33,7 +33,8 @@ export function InfoElement({
       >
         {longTitle}
       </h4>
-      <p style={{ fontSize: 18, color: "#AFAFAF" }}>{description}</p>
-    </div>
+      <p style={{ fontSize: 18, color: "#AFAFAF", paddingLeft: 40, paddingRight: 40 }}>
+  {description}
+</p>    </div>
   );
 }
