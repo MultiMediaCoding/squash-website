@@ -1,9 +1,9 @@
 import "./Comment.css";
-import star1 from "../../../../assets/stars/stars.1.svg";
-import star2 from "../../../../assets/stars/stars.2.svg";
-import star3 from "../../../..//assets/stars/stars.3.svg";
-import star4 from "../../../../assets/stars/stars.4.svg";
-import star5 from "../../../../assets/stars/stars.5.svg";
+import star1 from "/images/stars/stars.1.svg";
+import star2 from "/images/stars/stars.2.svg";
+import star3 from "/images/stars/stars.3.svg";
+import star4 from "/images/stars/stars.4.svg";
+import star5 from "/images/stars/stars.5.svg";
 
 const stars = new Map([
   [1, star1],

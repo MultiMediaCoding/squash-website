@@ -1,6 +1,6 @@
 import "./FeatureCards.css";
 import SingleFeatureCard from "./SingleCard/SingleFeatureCard";
-import toggle from "../../../assets/Toggle.png";
+import toggle from "/images/Toggle.png";
 
 export function FeatureCards() {
   return (

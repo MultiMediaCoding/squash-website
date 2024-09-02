@@ -1,0 +1,23 @@
+.appsHeader {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 8px;
+}
+
+@media (max-width: 768px) {
+  .appsGrid {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    align-items: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .appsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 60px;
+  }
+}

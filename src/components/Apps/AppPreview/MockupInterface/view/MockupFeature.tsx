@@ -1,19 +1,12 @@
 import { CSSProperties, useEffect, useState } from "react";
-import { InfoElement } from "../Common/InfoElement";
+import { InfoElement } from "../../../../Common/InfoElement";
 import "./MockupFeature.css";
+import { MockupFeatureProps } from "../model/MockupFeatureProps";
 
 export function MockupFeature({
-  image,
-  title,
-  subtitle,
-  description,
-  alignment,
+  mockupFeatureProps: { image, title, subtitle, description, alignment },
 }: {
-  image: string;
-  title: string;
-  subtitle: string;
-  description: string;
-  alignment: CSSProperties["textAlign"];
+  mockupFeatureProps: MockupFeatureProps;
 }) {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
 

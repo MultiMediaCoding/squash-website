@@ -1,5 +1,5 @@
 import "./ProductContainer.css";
-import isymbols from "../../../assets/isymbols.png";
+import isymbols from "/images/iSymbols.png";
 
 export function ProductContainer() {
   return (

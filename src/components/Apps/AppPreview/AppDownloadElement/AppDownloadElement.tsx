@@ -1,5 +1,5 @@
-import downloadBadge from "../../assets/AppStoreDownloadBadge.svg";
-import icon from "../../assets/iSymbols.png";
+import downloadBadge from "/images/AppStoreDownloadBadge.svg";
+import icon from "/images/iSymbols.png";
 import "./AppDownloadElement.css";
 
 export function AppDownloadElement() {
@@ -15,7 +15,11 @@ export function AppDownloadElement() {
       </h1>
 
       <a href="https://example.com" target="_blank" rel="noopener noreferrer">
-        <img className="downloadBadge" src={downloadBadge} alt="Download from App Store" />
+        <img
+          className="downloadBadge"
+          src={downloadBadge}
+          alt="Download from App Store"
+        />
       </a>
     </div>
   );
