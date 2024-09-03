@@ -1,18 +1,25 @@
+import { Link, useNavigate } from "react-router-dom";
 import "./AppContainer.css";
+import { App } from "../../model/App";
 
-export function AppContainer({ appIcon }: { appIcon: string }) {
+export function AppContainer({ app }: { app: App }) {
+  const navigate = useNavigate();
+  const goToAppPage = () => {
+    navigate(`apps/${app.name}`, { state: { app: app } });
+  };
+
   return (
-    <div className={"app"}>
+    <button onClick={goToAppPage} className={"app"}>
       <div className={"iconContainer"}>
-        <img className={"containerAppIcon"} src={appIcon}></img>
+        <img className={"containerAppIcon"} src={app.icon}></img>
       </div>
-      <div className="text-lg font-semibold">iSymbols</div>
+      <div className="text-lg font-semibold">{app.name}</div>
       <small
         style={{ color: "#A0A0A0", lineHeight: "1.4" }}
         className="text-sm font-regular leading-none"
       >
-        Connect your site to the most popular apps out there
+        {app.shortDescription}
       </small>
-    </div>
+    </button>
   );
 }

@@ -4,62 +4,34 @@ import { NavigationBar } from "../../../Navigation/NavigationBar";
 import { AppDownloadElement } from "../AppDownloadElement/AppDownloadElement";
 import { CommentSection } from "../CommentSection/CommentSection";
 import { FeatureCards } from "../FeatureCards/view/FeatureCards";
-import { AppHeader } from "../MockupInterface/AppHeader/view/AppHeader";
-import { MockupFeature } from "../MockupInterface/view/MockupFeature";
+import { AppHeader } from "../AppHeader/view/AppHeader";
+import { MockupFeature } from "../MockupFeature/view/MockupFeature";
 import { OtherProducts } from "../OtherProducts/OtherProducts";
 import { PhotoCarousel } from "../PhotoCarousel/view/PhotoCarousel";
-import isymbols from "/images/iSymbols.png";
 import mockup from "/images/Mockup.png";
+import { useLocation } from "react-router-dom";
+import { App } from "../../model/App";
 
 export function AppPreviewPage() {
-  const comments = [
-    {
-      title: "Fantastic Tool!",
-      description:
-        "This app has every icon I need for my projects. A must-have for designers!",
-      rating: 5,
-    },
-    {
-      title: "Very useful",
-      description:
-        "A great collection of SF Symbols, perfect for my app development needs.",
-      rating: 4,
-    },
-    {
-      title: "Love the simplicity!",
-      description:
-        "The app is straightforward and easy to navigate. Found all the symbols I was looking for in seconds.",
-      rating: 5,
-    },
-    {
-      title: "Could be better",
-      description:
-        "The icons are great, but I wish there were more customization options.",
-      rating: 3,
-    },
-    {
-      title: "Great for quick access",
-      description:
-        "Perfect app for quickly finding the right symbol. Saves me so much time!",
-      rating: 4,
-    },
-  ];
+  const location = useLocation();
+  const { app } = (location.state as { app: App }) || {};
+
   return (
     <div>
       <NavigationBar backgroundColor="#F0F0F0"></NavigationBar>
       <br></br>
       <br></br>
       <AppHeader
-        name="iSymbols"
-        slogan="Icons - easier than ever"
-        icon={isymbols}
+        name={app.name}
+        slogan={app.shortDescription}
+        icon={app.icon}
       ></AppHeader>
       <br></br>
       <br></br>
       <InfoElement
-        title="Icons Redefined"
-        longTitle="Everything that makes iSymbols so unique"
-        description="Keeps your Mac desktop tidy and hides all folders and documents wit just a Mousecklick."
+        title={app.pageTitle}
+        longTitle={app.pageDescription}
+        description={app.pageSubtitle}
       ></InfoElement>
       <br></br>
       <br></br>
@@ -83,7 +55,7 @@ export function AppPreviewPage() {
       <br></br>
       <br></br>
 
-      <CommentSection comments={comments}></CommentSection>
+      <CommentSection comments={app.comments}></CommentSection>
 
       <MockupFeature
         mockupFeatureProps={{

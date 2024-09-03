@@ -63,10 +63,11 @@ function App() {
       <div>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/apps" element={<AppsPage appIcon={isymbols} />} />
-          <Route path="/apps/isymbols" element={<AppPreviewPage />} />
+          <Route path="/apps" element={<AppsPage />} />
           <Route path="/support" element={<SupportPage />} />
           <Route path="/about" element={<AboutPage />} />
+          <Route path="/apps/isymbols" element={<AppPreviewPage />} />
+          <Route path="/apps/Hidden%20Desk" element={<AppPreviewPage />} />
         </Routes>
       </div>
     </Router>

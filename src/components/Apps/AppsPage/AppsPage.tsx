@@ -2,8 +2,10 @@ import { Link } from "react-router-dom";
 import { NavigationBar } from "../../Navigation/NavigationBar";
 import { AppContainer } from "./AppContainer/AppContainer";
 import "./AppsPage.css";
+import { apps } from "../model/Apps";
+import { App } from "../model/App";
 
-export function AppsPage({ appIcon }: { appIcon: string }) {
+export function AppsPage() {
   return (
     <div>
       <NavigationBar></NavigationBar>
@@ -24,15 +26,11 @@ export function AppsPage({ appIcon }: { appIcon: string }) {
       </div>
       <br></br>
       <br></br>
+
       <div className={"appsGrid"}>
-        <Link to="/apps/isymbols">
-          <AppContainer appIcon={appIcon}></AppContainer>
-        </Link>
-        <AppContainer appIcon={appIcon}></AppContainer>
-        <AppContainer appIcon={appIcon}></AppContainer>
-        <AppContainer appIcon={appIcon}></AppContainer>
-        <AppContainer appIcon={appIcon}></AppContainer>
-        <AppContainer appIcon={appIcon}></AppContainer>
+        {apps.map((app) => (
+          <AppContainer app={app}></AppContainer>
+        ))}
       </div>
     </div>
   );

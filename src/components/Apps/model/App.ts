@@ -1,4 +1,6 @@
+import { Comment } from "../AppPreview/CommentSection/Comment/Comment";
 import { Feature } from "../AppPreview/FeatureCards/model/FeatureCard";
+import { MockupFeatureProps } from "../AppPreview/MockupFeature/model/MockupFeatureProps";
 
 export interface App {
   name: string;
@@ -9,9 +11,12 @@ export interface App {
   pageDescription: string;
   previewImages: string[];
   features: Feature[];
+  mockupFeatures: MockupFeatureProps[];
+  comments: Comment[];
+  link: string;
   version: string;
   size: string;
   category: string;
   price: number;
-  link: string;
+  otherProducts: App[];
 }
