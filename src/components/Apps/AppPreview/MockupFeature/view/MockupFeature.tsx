@@ -1,4 +1,4 @@
-import { CSSProperties, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { InfoElement } from "../../../../Common/InfoElement";
 import "./MockupFeature.css";
 import { MockupFeatureProps } from "../model/MockupFeatureProps";

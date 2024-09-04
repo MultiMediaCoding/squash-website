@@ -1,6 +1,5 @@
 import { App } from "../../model/App";
 import "./ProductContainer.css";
-import isymbols from "/images/iSymbols.png";
 
 export function ProductContainer({ app }: { app: App }) {
   return (

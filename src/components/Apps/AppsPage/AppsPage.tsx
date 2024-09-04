@@ -1,9 +1,7 @@
-import { Link } from "react-router-dom";
 import { NavigationBar } from "../../Navigation/NavigationBar";
 import { AppContainer } from "./AppContainer/AppContainer";
 import "./AppsPage.css";
 import { apps } from "../model/Apps";
-import { App } from "../model/App";
 
 export function AppsPage() {
   return (
