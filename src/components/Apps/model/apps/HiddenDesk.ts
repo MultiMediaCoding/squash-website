@@ -1,7 +1,7 @@
 import { App } from "../App";
 
 export const hiddenDesk: App = {
-  name: "Hidden Desk",
+  name: "HiddenDesk",
   shortDescription: "Declutter your mac destop",
   icon: "/images/Apps/HiddenDesk/icon.png",
   pageTitle: "Description",
@@ -9,12 +9,54 @@ export const hiddenDesk: App = {
   pageDescription:
     "Keeps your Mac desktop tidy and hides all folders and documents wit just a Mousecklick.",
   previewImages: [
-    "/images/PreviewImages/Home.png",
-    "/images/PreviewImages/Darkmode.png",
-    "/images/PreviewImages/AppToggle.png",
+    "/images/Apps/HiddenDesk/PreviewImages/Home.png",
+    "/images/Apps/HiddenDesk/PreviewImages/Darkmode.png",
+    "/images/Apps/HiddenDesk/PreviewImages/AppToggle.png",
   ],
-  features: [],
-  mockupFeatures: [],
+  features: [
+    {
+      name: "Menu Bar App",
+      description:
+        "The menu bar integration ensures HiddenDesk is always one click away.",
+      image: "/images/Apps/HiddenDesk/Features/MenuBar.png",
+    },
+    {
+      name: "Keyboard Shortcuts",
+      description: "Access the tool easily and anytime with Ctrl + Shift + H.",
+      image: "/images/Apps/HiddenDesk/Features/Shortcuts.png",
+    },
+    {
+      name: "Easy Usage",
+      description: "Dedicated to simplicity, free of superfluous elements.",
+      image: "/images/Apps/HiddenDesk/Features/Toggle.png",
+    },
+  ],
+  mockupFeatures: [
+    {
+      image: "/images/Apps/HiddenDesk/MockupFeatures/HomeLight.png",
+      title: "Easy Usage",
+      subtitle: "Focused on the essentials",
+      description:
+        "HiddenDesk boasts a simple, intuitive design. Its straightforward interface makes hiding your desktop items effortless, so you can focus on what matters.",
+      alignment: "left",
+    },
+    {
+      image: "/images/Apps/HiddenDesk/MockupFeatures/HomeDark.png",
+      title: "Adaptive Design",
+      subtitle: "Adjusted to your mac’s appearence",
+      description:
+        "The app layout seamlessly adapts to Dark Mode, ensuring that the MacBook screen preview, visible in a compact view, aligns with the wallpaper and Dark Mode settings.",
+      alignment: "right",
+    },
+    {
+      image: "/images/Apps/HiddenDesk/MockupFeatures/HomeLight.png",
+      title: "HotKeys",
+      subtitle: "Hide your distractions even faster",
+      description:
+        "Quickly hide all desktop clutter with a simple Keyboard Shortcut. Press it again to instantly reveal your files and folders when you need them!",
+      alignment: "left",
+    },
+  ],
   comments: [
     {
       title: "Fantastic Tool!",
@@ -48,9 +90,9 @@ export const hiddenDesk: App = {
     },
   ],
   link: "",
-  version: "",
-  size: "",
-  category: "",
-  price: 0,
+  version: 1.0,
+  size: "1,4 MB",
+  category: "Utility",
+  price: 1.99,
   otherProducts: [],
 };

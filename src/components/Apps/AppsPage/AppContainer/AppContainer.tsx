@@ -5,7 +5,7 @@ import { App } from "../../model/App";
 export function AppContainer({ app }: { app: App }) {
   const navigate = useNavigate();
   const goToAppPage = () => {
-    navigate(`apps/${app.name}`, { state: { app: app } });
+    navigate(`${app.name}`, { state: { app: app } });
   };
 
   return (

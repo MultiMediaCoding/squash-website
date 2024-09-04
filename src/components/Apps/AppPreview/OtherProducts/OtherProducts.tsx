@@ -1,7 +1,8 @@
 import { ProductContainer } from "./ProductContainer";
 import "./OtherProducts.css";
+import { App } from "../../model/App";
 
-export function OtherProducts() {
+export function OtherProducts({ app }: { app: App }) {
   return (
     <div>
       <div
@@ -11,8 +12,9 @@ export function OtherProducts() {
         Other Products
       </div>
       <div className="appsList">
-        <ProductContainer></ProductContainer>
-        <ProductContainer></ProductContainer>
+        {app.otherProducts.map((app) => (
+          <ProductContainer app={app}></ProductContainer>
+        ))}
       </div>
     </div>
   );

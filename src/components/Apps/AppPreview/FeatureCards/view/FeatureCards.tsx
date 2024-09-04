@@ -1,25 +1,17 @@
+import { App } from "../../../model/App";
 import "./FeatureCards.css";
 import SingleFeatureCard from "./SingleCard/SingleFeatureCard";
-import toggle from "/images/Toggle.png";
 
-export function FeatureCards() {
+export function FeatureCards({ app }: { app: App }) {
   return (
     <div className={"featureCards"}>
-      <SingleFeatureCard
-        image={toggle}
-        title={"Auto Login"}
-        description={"Use your fingerprint to login to your account"}
-      ></SingleFeatureCard>
-      <SingleFeatureCard
-        image={toggle}
-        title={"Auto Login"}
-        description={"Use your fingerprint to login to your account"}
-      ></SingleFeatureCard>
-      <SingleFeatureCard
-        image={toggle}
-        title={"Auto Login"}
-        description={"Use your fingerprint to login to your account"}
-      ></SingleFeatureCard>
+      {app.features.map((feature, _) => (
+        <SingleFeatureCard
+          title={feature.name}
+          description={feature.description}
+          image={feature.image}
+        ></SingleFeatureCard>
+      ))}
     </div>
   );
 }

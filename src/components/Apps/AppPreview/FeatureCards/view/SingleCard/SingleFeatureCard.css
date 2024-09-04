@@ -7,9 +7,15 @@
 }
 
 @media (max-width: 768px) {
+  .card {
+    width: 96px;
+  }
+
   .tracking-tight {
     font-size: 14px;
     margin-top: 12px;
+    line-height: 1.2;
+    margin-bottom: 6px;
   }
   .text-muted-foreground {
     font-size: 9px;
@@ -22,6 +28,9 @@
 }
 
 @media (min-width: 768px) {
+  .card {
+    width: 170px;
+  }
   .tracking-tight {
     font-size: 20px;
     margin-top: 20px;

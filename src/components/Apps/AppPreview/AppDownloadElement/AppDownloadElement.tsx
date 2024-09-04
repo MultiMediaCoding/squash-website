@@ -1,17 +1,17 @@
 import downloadBadge from "/images/AppStoreDownloadBadge.svg";
-import icon from "/images/iSymbols.png";
 import "./AppDownloadElement.css";
+import { App } from "../../model/App";
 
-export function AppDownloadElement() {
+export function AppDownloadElement({ app }: { app: App }) {
   return (
     <div className="download-box">
-      <img className="icon" src={icon} alt="App Icon" />
+      <img className="icon" src={app.icon} alt="App Icon" />
 
       <h1
         style={{ marginTop: "29px" }}
         className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl"
       >
-        iSymbols
+        {app.name}
       </h1>
 
       <a href="https://example.com" target="_blank" rel="noopener noreferrer">

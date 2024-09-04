@@ -8,7 +8,6 @@ import { AppHeader } from "../AppHeader/view/AppHeader";
 import { MockupFeature } from "../MockupFeature/view/MockupFeature";
 import { OtherProducts } from "../OtherProducts/OtherProducts";
 import { PhotoCarousel } from "../PhotoCarousel/view/PhotoCarousel";
-import mockup from "/images/Mockup.png";
 import { useLocation } from "react-router-dom";
 import { App } from "../../model/App";
 
@@ -35,52 +34,43 @@ export function AppPreviewPage() {
       ></InfoElement>
       <br></br>
       <br></br>
-      <PhotoCarousel></PhotoCarousel>
+      <PhotoCarousel app={app}></PhotoCarousel>
       <br></br>
       <br></br>
       <br></br>
       <br></br>
-      <FeatureCards></FeatureCards>
+      <FeatureCards app={app}></FeatureCards>
 
-      <MockupFeature
-        mockupFeatureProps={{
-          title: "4.000 Symbols",
-          subtitle: "Brose the Apple SF Symbol Database",
-          description:
-            "Quickly find every icon you can imagine in the SF Symbol groups and browse thousands of different glyphs.",
-          image: mockup,
-          alignment: "left",
-        }}
-      ></MockupFeature>
+      {app.mockupFeatures.map((feature, _) => (
+        <MockupFeature
+          mockupFeatureProps={{
+            title: feature.title,
+            subtitle: feature.subtitle,
+            description: feature.description,
+            image: feature.image,
+            alignment: feature.alignment,
+          }}
+        ></MockupFeature>
+      ))}
+
       <br></br>
       <br></br>
 
       <CommentSection comments={app.comments}></CommentSection>
-
-      <MockupFeature
-        mockupFeatureProps={{
-          title: "Customize",
-          subtitle: "Style your icons the way you like",
-          description:
-            "Adjust your symbol’s size, color, radius, or even add a shadow to fit your needs. When you’re ready to use it, simply export it with one tap and save it to your phones camera roll as an image.",
-          image: mockup,
-          alignment: "right",
-        }}
-      ></MockupFeature>
       <br></br>
       <br></br>
-      <AppDownloadElement></AppDownloadElement>
+      <AppDownloadElement app={app}></AppDownloadElement>
       <br></br>
       <br></br>
       <AppDetailTable
-        version="3.0"
-        size="2GB"
-        category="Utility"
-        price="$0.99"
+        version={app.version.toString()}
+        size={app.size}
+        category={app.category}
+        price={`$${app.price}`}
       ></AppDetailTable>
       <br></br>
       <br></br>
-      <OtherProducts></OtherProducts>
+      <OtherProducts app={app}></OtherProducts>
     </div>
   );
 }

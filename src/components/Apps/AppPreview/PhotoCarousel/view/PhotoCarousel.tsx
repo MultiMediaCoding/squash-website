@@ -1,5 +1,3 @@
-import appCloseUpiTask from "/images/AppCloseUpITask.jpeg";
-import appCloseUpErnteEcke from "/images/AppCloseUpErnteEcke.jpeg";
 import "./PhotoCarousel.css";
 
 import { Card, CardContent } from "../../../../ui/card";
@@ -10,14 +8,13 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "../../../../ui/carousel";
+import { App } from "../../../model/App";
 
-export function PhotoCarousel() {
-  const images = [appCloseUpiTask, appCloseUpErnteEcke];
-
+export function PhotoCarousel({ app }: { app: App }) {
   return (
     <Carousel className="carouselContainer">
       <CarouselContent>
-        {images.map((image, index) => (
+        {app.previewImages.map((image, index) => (
           <CarouselItem key={index}>
             <Card className="p-0">
               <CardContent className="p-0">

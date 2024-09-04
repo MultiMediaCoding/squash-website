@@ -7,10 +7,11 @@ import { AboutPage } from "./components/About/AboutPage";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import iphone from "/images/iPhone.png";
 import { FAQ } from "./components/Home/FAQ";
-import isymbols from "/images/iSymbols.png";
 import { SupportPage } from "./components/Support/SupportPage";
 import { AppsPage } from "./components/Apps/AppsPage/AppsPage";
 import { AppPreviewPage } from "./components/Apps/AppPreview/view/AppPreviewPage";
+import { apps } from "./components/Apps/model/Apps";
+import ScrollToTop from "./components/Common/ScrollToTop";
 
 export function Home() {
   const cards = [
@@ -60,6 +61,7 @@ export function Home() {
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -67,7 +69,9 @@ function App() {
           <Route path="/support" element={<SupportPage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/apps/isymbols" element={<AppPreviewPage />} />
-          <Route path="/apps/Hidden%20Desk" element={<AppPreviewPage />} />
+          {apps.map((app) => (
+            <Route path={`/apps/${app.name}`} element={<AppPreviewPage />} />
+          ))}
         </Routes>
       </div>
     </Router>
