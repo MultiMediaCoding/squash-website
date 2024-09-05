@@ -14,7 +14,7 @@ export interface App {
   mockupFeatures: MockupFeatureProps[];
   comments: Comment[];
   link: string;
-  version: number;
+  version: string;
   size: string;
   category: string;
   price: number;

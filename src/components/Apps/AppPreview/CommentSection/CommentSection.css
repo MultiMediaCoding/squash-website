@@ -1,11 +1,29 @@
-.commentSection {
+.comment-section {
+  position: relative;
+  height: 300px;
   margin: 0 -2rem 0 -2rem;
-  padding: 32px;
   display: flex;
-  flex-direction: row-reverse;
-  justify-content: center;
   align-items: center;
-  gap: 15px;
   background-color: #f1f1f1;
   overflow: hidden;
+}
+
+.wrapper {
+  position: absolute;
+  display: flex;
+}
+
+section {
+  display: flex;
+  animation: swipe var(--speed) linear infinite backwards;
+}
+
+@keyframes swipe {
+  0% {
+    transform: translate(0);
+  }
+
+  100% {
+    transform: translate(-100%);
+  }
 }

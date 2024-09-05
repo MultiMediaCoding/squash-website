@@ -1,4 +1,6 @@
 import { App } from "../App";
+import { bodenseeTemperatur } from "./BodenseeTemperatur";
+import { skationary } from "./Skationary";
 
 export const isymbols: App = {
   name: "iSymbols",
@@ -58,42 +60,11 @@ export const isymbols: App = {
       alignment: "left",
     },
   ],
-  comments: [
-    {
-      title: "Fantastic Tool!",
-      description:
-        "This app has every icon I need for my projects. A must-have for designers!",
-      rating: 5,
-    },
-    {
-      title: "Very useful",
-      description:
-        "A great collection of SF Symbols, perfect for my app development needs.",
-      rating: 4,
-    },
-    {
-      title: "Love the simplicity!",
-      description:
-        "The app is straightforward and easy to navigate. Found all the symbols I was looking for in seconds.",
-      rating: 5,
-    },
-    {
-      title: "Could be better",
-      description:
-        "The icons are great, but I wish there were more customization options.",
-      rating: 3,
-    },
-    {
-      title: "Great for quick access",
-      description:
-        "Perfect app for quickly finding the right symbol. Saves me so much time!",
-      rating: 4,
-    },
-  ],
+  comments: [],
   link: "",
-  version: 1.1,
+  version: "1.1",
   size: "1,2 MB",
   category: "Graphics & Design",
   price: 1.99,
-  otherProducts: [],
+  otherProducts: [bodenseeTemperatur],
 };

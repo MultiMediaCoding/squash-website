@@ -1,3 +1,4 @@
+import { UUID } from "crypto";
 import "./Comment.css";
 import star1 from "/images/stars/stars.1.svg";
 import star2 from "/images/stars/stars.2.svg";
@@ -14,6 +15,7 @@ const stars = new Map([
 ]);
 
 export interface Comment {
+  id: UUID;
   title: string;
   description: string;
   rating: number;

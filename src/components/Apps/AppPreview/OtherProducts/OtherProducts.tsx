@@ -12,8 +12,8 @@ export function OtherProducts({ app }: { app: App }) {
         Other Products
       </div>
       <div className="appsList">
-        {app.otherProducts.map((app) => (
-          <ProductContainer app={app}></ProductContainer>
+        {app.otherProducts.map((otherApp) => (
+          <ProductContainer app={otherApp}></ProductContainer>
         ))}
       </div>
     </div>

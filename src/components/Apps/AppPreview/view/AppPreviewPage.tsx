@@ -56,14 +56,18 @@ export function AppPreviewPage() {
       <br></br>
       <br></br>
 
-      <CommentSection comments={app.comments}></CommentSection>
+      {app.comments.length > 0 ? (
+        <CommentSection comments={app.comments} speed={40000}></CommentSection>
+      ) : (
+        <div></div>
+      )}
       <br></br>
       <br></br>
       <AppDownloadElement app={app}></AppDownloadElement>
       <br></br>
       <br></br>
       <AppDetailTable
-        version={app.version.toString()}
+        version={app.version}
         size={app.size}
         category={app.category}
         price={`$${app.price}`}
