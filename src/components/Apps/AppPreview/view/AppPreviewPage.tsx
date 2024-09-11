@@ -57,7 +57,16 @@ export function AppPreviewPage() {
       <br></br>
 
       {app.comments.length > 0 ? (
-        <CommentSection comments={app.comments} speed={40000}></CommentSection>
+        <div>
+          <br></br>
+          <br></br>
+          <CommentSection
+            comments={app.comments}
+            speed={40000}
+          ></CommentSection>
+          <br></br>
+          <br></br>
+        </div>
       ) : (
         <div></div>
       )}
