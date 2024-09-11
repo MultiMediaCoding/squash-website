@@ -1,6 +1,4 @@
 import { App } from "../App";
-import { isymbols } from "./iSymbols";
-import { skationary } from "./Skationary";
 
 export const bodenseeTemperatur: App = {
   name: "Bodensee Temperatur",

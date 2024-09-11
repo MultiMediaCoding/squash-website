@@ -1,6 +1,5 @@
 import { App } from "../App";
 import { bodenseeTemperatur } from "./BodenseeTemperatur";
-import { skationary } from "./Skationary";
 
 export const isymbols: App = {
   name: "iSymbols",
@@ -61,7 +60,7 @@ export const isymbols: App = {
     },
   ],
   comments: [],
-  link: "",
+  link: "https://apps.apple.com/de/app/isymbols/id6451404922",
   version: "1.1",
   size: "1,2 MB",
   category: "Graphics & Design",
