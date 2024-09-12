@@ -14,7 +14,7 @@ export function AppDownloadElement({ app }: { app: App }) {
         {app.name}
       </h1>
 
-      <a href="https://example.com" target="_blank" rel="noopener noreferrer">
+      <a href={app.link} target="_blank" rel="noopener noreferrer">
         <img
           className="downloadBadge"
           src={downloadBadge}
