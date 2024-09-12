@@ -6,10 +6,11 @@
 
 @media (max-width: 768px) {
   .carouselContainer {
-    margin: -1em;
+    margin: -0.8em;
+    overflow: hidden;
   }
   .photoCarouselImg {
-    height: 350px;
+    height: 320px;
   }
 }
 
