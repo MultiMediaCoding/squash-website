@@ -15,6 +15,8 @@ export function AppPreviewPage() {
   const location = useLocation();
   const { app } = (location.state as { app: App }) || {};
 
+  const displayPrice = app.price === 0 ? "Free" : `$${app.price}`;
+
   return (
     <div>
       <NavigationBar backgroundColor="#F0F0F0"></NavigationBar>
@@ -70,7 +72,7 @@ export function AppPreviewPage() {
         version={app.version}
         size={app.size}
         category={app.category}
-        price={`$${app.price}`}
+        price={displayPrice}
       ></AppDetailTable>
       <br></br>
       <br></br>

@@ -5,6 +5,7 @@ import { isymbols } from "./apps/iSymbols";
 import { notely } from "./apps/Notely";
 import { skationary } from "./apps/Skationary";
 import { itask } from "./apps/iTask";
+import { lindenhofpark } from "./apps/Lindenhofpark";
 
 export const apps: App[] = [
   hiddenDesk,
@@ -12,5 +13,6 @@ export const apps: App[] = [
   isymbols,
   notely,
   bodenseeTemperatur,
+  lindenhofpark,
   itask,
 ];
