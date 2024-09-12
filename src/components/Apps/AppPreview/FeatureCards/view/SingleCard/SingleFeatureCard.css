@@ -8,22 +8,23 @@
 
 @media (max-width: 768px) {
   .card {
-    width: 96px;
+    width: 200px;
+    text-align: center;
   }
 
   .tracking-tight {
-    font-size: 14px;
+    font-size: 20px;
     margin-top: 12px;
     line-height: 1.2;
     margin-bottom: 6px;
   }
   .text-muted-foreground {
-    font-size: 9px;
+    font-size: 14px;
   }
   .featureCardImg {
-    width: 96px;
-    height: 96px;
-    border-radius: 8px;
+    width: 200px;
+    height: 200px;
+    border-radius: 12px;
   }
 }
 
