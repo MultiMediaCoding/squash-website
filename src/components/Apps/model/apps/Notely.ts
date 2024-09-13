@@ -65,7 +65,7 @@ export const notely: App = {
     },
   ],
   comments: [],
-  link: "",
+  link: "https://apps.apple.com/de/app/notely/id6477283566?mt=12",
   version: "1.0",
   size: "645 KB",
   category: "Utility",
