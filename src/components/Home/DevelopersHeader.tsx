@@ -1,5 +1,5 @@
 "use client";
-import developers from "/images/Developers.png";
+import developers from "/images/Home/Developers.png";
 import "./DevelopersHeader.css";
 
 export function DevelopersHeader() {

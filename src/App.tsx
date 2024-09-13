@@ -1,54 +1,23 @@
 import "./App.css";
-import { CSSProperties } from "react";
-import { PresentationBox } from "./components/PresentationBox";
 import { DevelopersHeader } from "./components/Home/DevelopersHeader";
 import { NavigationBar } from "./components/Navigation/NavigationBar";
 import { AboutPage } from "./components/About/AboutPage";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import iphone from "/images/iPhone.png";
+
 import { FAQ } from "./components/Home/FAQ";
 import { SupportPage } from "./components/Support/SupportPage";
 import { AppsPage } from "./components/Apps/AppsPage/AppsPage";
 import { AppPreviewPage } from "./components/Apps/AppPreview/view/AppPreviewPage";
 import { apps } from "./components/Apps/model/Apps";
 import ScrollToTop from "./components/Common/ScrollToTop";
+import { AppBoxes } from "./components/AppBoxes";
 
 export function Home() {
-  const cards = [
-    {
-      image: iphone,
-      title: "iSymbols",
-      subtitle: "The best icon library",
-      description:
-        "iSymbols is the best icon library in the world. It has a wide variety of icons that you can use in your projects.",
-      buttonDestination: "/test",
-      alignItems: "left",
-    },
-    {
-      image: iphone,
-      title: "Hidden Desk",
-      subtitle: "Declutter your desktop",
-      description:
-        "iSymbols is the best icon library in the world. It has a wide variety of icons that you can use in your projects.",
-      buttonDestination: "/about",
-      alignItems: "right",
-    },
-  ];
-
   return (
     <div>
       <NavigationBar></NavigationBar>
       <DevelopersHeader></DevelopersHeader>
-      {cards.map((card) => (
-        <PresentationBox
-          image={card.image}
-          title={card.title}
-          subtitle={card.subtitle}
-          description={card.description}
-          buttonDestination={card.buttonDestination}
-          alignment={card.alignItems as CSSProperties["textAlign"]}
-        ></PresentationBox>
-      ))}
+      <AppBoxes></AppBoxes>
       <br></br>
       <br></br>
       <FAQ></FAQ>
@@ -68,7 +37,6 @@ function App() {
           <Route path="/apps" element={<AppsPage />} />
           <Route path="/support" element={<SupportPage />} />
           <Route path="/about" element={<AboutPage />} />
-          <Route path="/apps/isymbols" element={<AppPreviewPage />} />
           {apps.map((app) => (
             <Route path={`/apps/${app.name}`} element={<AppPreviewPage />} />
           ))}

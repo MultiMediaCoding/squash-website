@@ -8,7 +8,7 @@ import {
 export function FAQ() {
   const donateContent = `We welcome donations to support our company’s mission, and by "mission," we mean our quest for the finest champagne! Your contributions will help us enjoy only the best bubbles. Each donation gets us one step closer to that dream of toasting our success in style. Thank you for your support!`;
   return (
-    <div>
+    <div style={{ maxWidth: "1024px", margin: "0 auto" }}>
       <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
         FAQ
       </h1>

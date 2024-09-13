@@ -28,7 +28,8 @@ export const lindenhofpark: App = {
     },
     {
       name: "Student Project",
-      description: "Created by students from the Valentin Heider Gymnasium during the PSeminar Biology project.",
+      description:
+        "Created by students from the Valentin Heider Gymnasium during the PSeminar Biology project.",
       image: "/images/Apps/Lindenhofpark/Features/StudentProject.png",
     },
   ],
@@ -46,17 +47,16 @@ export const lindenhofpark: App = {
       image:
       
         "/images/Apps/Lindenhofpark/MockupFeatures/RegionalHistory.png",
+
       title: "Regional History",
       subtitle: "Uncover the park’s hidden stories",
       description:
         "Explore Lindenhof’s history, including old ruins, monuments, and historical buildings. Interesting side facts will enrich your walk through the park.",
       alignment: "right",
     },
-
     {
-      image:
-      
-        "/images/Apps/Lindenhofpark/MockupFeatures/InteractiveMap.png",
+
+      image: "/images/Apps/Lindenhofpark/MockupFeatures/InteractiveMap.png",
       title: "Interactive Map",
       subtitle: "Enhance Your Park Adventure",
       description:
@@ -65,10 +65,10 @@ export const lindenhofpark: App = {
     },
   ],
   comments: [],
-  link: "",
+  link: "https://apps.apple.com/de/app/lindenhofpark/id6477407985",
   version: "1.0",
   size: "263,3 MB",
   category: "Reference",
-  price: 0.00,
+  price: 0.0,
   otherProducts: [bodenseeTemperatur],
 };

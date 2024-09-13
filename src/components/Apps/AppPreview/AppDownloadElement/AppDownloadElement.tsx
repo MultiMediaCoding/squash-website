@@ -1,4 +1,4 @@
-import downloadBadge from "/images/AppStoreDownloadBadge.svg";
+import downloadBadge from "/images/Apps/Common/AppStoreDownloadBadge.svg";
 import "./AppDownloadElement.css";
 import { App } from "../../model/App";
 
