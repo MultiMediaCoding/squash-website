@@ -1,8 +1,8 @@
 import "./AboutPage.css";
 import "./AboutPhoto.css";
 
-import founders from "/images/founders.jpeg";
-import founders2 from "/images/founders2.jpeg";
+import founders from "/images/About/founders.jpeg";
+import founders2 from "/images/About/founders2.jpeg";
 import { AboutPhoto } from "./AboutPhoto";
 import { NavigationBar } from "../Navigation/NavigationBar";
 

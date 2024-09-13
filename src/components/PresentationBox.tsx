@@ -1,23 +1,30 @@
 import "./PresentationBox.css";
 import { CSSProperties, useEffect, useState } from "react";
 import { Button } from "./ui/button";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import { App } from "./Apps/model/App";
 
 export function PresentationBox({
   image,
   title,
   subtitle,
   description,
-  buttonDestination,
+  app,
   alignment,
 }: {
   image: string;
   title: string;
   subtitle: string;
   description: string;
-  buttonDestination: string;
+  app: App;
+
   alignment: CSSProperties["textAlign"];
 }) {
+  const navigate = useNavigate();
+  const goToAppPage = () => {
+    navigate(`apps/${app.name}`, { state: { app: app } });
+  };
+
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
 
   useEffect(() => {
@@ -45,9 +52,9 @@ export function PresentationBox({
           <div className="text-lg font-semibold">{subtitle}</div>
           <p className="text-sm text-muted-foreground">{description}</p>
         </div>
-        <Link to={buttonDestination}>
-          <Button style={{ width: "120px" }}>Learn More</Button>
-        </Link>
+        <Button style={{ width: "120px" }} onClick={goToAppPage}>
+          Learn More
+        </Button>
       </div>
       {alignment == "right" ? (
         <img className={"imageBox right"} src={image} />
