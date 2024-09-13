@@ -7,9 +7,9 @@ export const skationary: App = {
   shortDescription: "All your skatetricks and clips",
   icon: "/images/Apps/Skationary/icon.png",
   pageTitle: "Description",
-  pageSubtitle: "Your smart progress tracker for skateboarding",
+  pageSubtitle: "Skationary makes tracking tricks you learn effortless and fun by letting you add video clips and automatically organizing them for you.",
   pageDescription:
-    "Skationary makes tracking tricks you learn effortless and fun by letting you add video clips and automatically organizing them for you.",
+    "Your smart progress tracker for skateboarding",
   previewImages: [
     "/images/Apps/Skationary/PreviewImages/Videos.png",
     "/images/Apps/Skationary/PreviewImages/TrickDetails.png",
