@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import "./PhotoCarousel.css";
 
 import { Card, CardContent } from "../../../../ui/card";
