@@ -6,9 +6,8 @@ export const isymbols: App = {
   shortDescription: "Icons - easier than ever",
   icon: "/images/Apps/iSymbols/icon.png",
   pageTitle: "Description",
-  pageSubtitle: "A new way to use SF Symbols on mobile Devices",
-  pageDescription:
-    "Export Apple SF icons to your photo library and integrate them into your designs.",
+  pageSubtitle: "Export Apple SF icons to your photo library and integrate them into your designs.",
+  pageDescription: "A new way to use SF Symbols on mobile Devices",
   previewImages: [
     "/images/Apps/iSymbols/PreviewImages/Editor.png",
     "/images/Apps/iSymbols/PreviewImages/Categories.png",

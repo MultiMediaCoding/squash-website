@@ -5,9 +5,9 @@ export const bodenseeTemperatur: App = {
   shortDescription: "Minimalistic lake measurements",
   icon: "/images/Apps/BodenseeTemperatur/icon.png",
   pageTitle: "Description",
-  pageSubtitle: "Lake Constance Temperature at a Glance",
+  pageSubtitle: "Instantly access real-time lake temperatures, daily trends, and historical data with a minimalistic, visual interface.",
   pageDescription:
-    "Instantly access real-time lake temperatures, daily trends, and historical data with a minimalistic, visual interface.",
+    "Lake Constance Temperature at a Glance",
   previewImages: [
     "/images/Apps/BodenseeTemperatur/PreviewMockups/Blue.png",
     "/images/Apps/BodenseeTemperatur/PreviewMockups/AllColors.png",

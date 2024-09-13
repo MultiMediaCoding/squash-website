@@ -6,9 +6,8 @@ export const lindenhofpark: App = {
   shortDescription: "Discover regional nature and culture",
   icon: "/images/Apps/Lindenhofpark/icon.png",
   pageTitle: "Description",
-  pageSubtitle: "Experience Lindenhof Park in a Digital App Journey",
-  pageDescription:
-    "Discover Lindenhof Park’s trees and historical landmarks with detailed info, images, and an interactive map.",
+  pageSubtitle: "Discover Lindenhof Park’s trees and historical landmarks with detailed info, images, and an interactive map.",
+  pageDescription: "Experience Lindenhof Park in a Digital App Journey",
   previewImages: [
     "/images/Apps/Lindenhofpark/PreviewImages/MapView.png",
     "/images/Apps/Lindenhofpark/PreviewImages/PlaceDetails.png",
@@ -46,7 +45,7 @@ export const lindenhofpark: App = {
     {
       image:
       
-        "/images/Apps/Lindenhofpark/MockupFeatures/InteractiveMap.png",
+        "/images/Apps/Lindenhofpark/MockupFeatures/RegionalHistory.png",
       title: "Regional History",
       subtitle: "Uncover the park’s hidden stories",
       description:
@@ -57,7 +56,7 @@ export const lindenhofpark: App = {
     {
       image:
       
-        "/images/Apps/Lindenhofpark/MockupFeatures/RegionalHistory.png",
+        "/images/Apps/Lindenhofpark/MockupFeatures/InteractiveMap.png",
       title: "Interactive Map",
       subtitle: "Enhance Your Park Adventure",
       description:

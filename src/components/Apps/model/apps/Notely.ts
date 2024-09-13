@@ -7,10 +7,8 @@ export const notely: App = {
   shortDescription: "Ntfy push notifications",
   icon: "/images/Apps/Notely/icon.png",
   pageTitle: "Description",
-  pageSubtitle: "Instant notifications for your Mac",
-  pageDescription:
-    "Receive real-time data via the Ntfy API, displayed as native push notifications on your Mac.",
-  previewImages: [
+  pageSubtitle: "Receive real-time data via the Ntfy API, displayed as native push notifications on your Mac.",
+  pageDescription: "Instant notifications for your Mac",previewImages: [
     "/images/Apps/Notely/PreviewImages/HomeDesktop.png",
     "/images/Apps/Notely/PreviewImages/SplineStack1.png",
     "/images/Apps/Notely/PreviewImages/SplineStack2.png",
