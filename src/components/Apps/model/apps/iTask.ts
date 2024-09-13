@@ -7,9 +7,9 @@ export const itask: App = {
   shortDescription: "Focus-Boosting To-Dos",
   icon: "/images/Apps/iTask/icon.png",
   pageTitle: "Description",
-  pageSubtitle: "Regain focus over your daily tasks",
+  pageSubtitle: "iTask is a sleek to-do list app that lets you easily organize and customize your tasks. Keep track of what’s done.",
   pageDescription:
-    "iTask is a sleek to-do list app that lets you easily organize and customize your tasks. Keep track of what’s done.",
+    "Regain focus over your daily tasks",
   previewImages: [
     "/images/Apps/iTask/PreviewImages/TaskListEntires.png",
     "/images/Apps/iTask/PreviewImages/TaskCategories.png",

@@ -5,9 +5,8 @@ export const hiddenDesk: App = {
   shortDescription: "Declutter your mac destop",
   icon: "/images/Apps/HiddenDesk/icon.png",
   pageTitle: "Description",
-  pageSubtitle: "Hidden Desk makes it easy to let your mac shine",
-  pageDescription:
-    "Keeps your Mac desktop tidy and hides all folders and documents wit just a Mousecklick.",
+  pageSubtitle: "Keeps your Mac desktop tidy and hides all folders and documents with just a Mousecklick.",
+  pageDescription: "Hidden Desk makes it easy to let your mac shine",
   previewImages: [
     "/images/Apps/HiddenDesk/PreviewImages/Home.png",
     "/images/Apps/HiddenDesk/PreviewImages/Darkmode.png",
