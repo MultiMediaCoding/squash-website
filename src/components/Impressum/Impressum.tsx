@@ -32,10 +32,13 @@ export const Impressum: React.FC = () => {
           Kontakt
         </h2>
         <p className="text-xl text-muted-foreground">
-          Telefon: +49 (0) 83823793
+          Telefon:{" "}
+          <a href="tel:+4983823793" className="gray-link">
+            +49 (0) 8382 3793
+          </a>
           <br />
           E-Mail:{" "}
-          <a href="mailto:hlps.developers@gmail.com" className="underline">
+          <a href="mailto:hlps.developers@gmail.com" className="gray-link">
             hlps.developers@gmail.com
           </a>
         </p>
@@ -63,7 +66,7 @@ export const Impressum: React.FC = () => {
             href="https://www.e-recht24.de"
             target="_blank"
             rel="noopener noreferrer"
-            className="underline"
+            className="gray-link"
           >
             https://www.e-recht24.de
           </a>

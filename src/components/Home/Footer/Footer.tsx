@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 import "./Footer.css";
 
 export function Footer() {
+  const appleDesignResourcesLegal =
+    "Apple, the Apple logo, macOS, Mac, iPhone, and iPad are trademarks of Apple&nbsp;Inc., registered in the U.S. and other countries and regions. App&nbsp;Store is a service mark of Apple&nbsp;Inc. IOS is a trademark or registered trademark of Cisco in the U.S. and other countries and is used under license.";
   return (
     <div className="footer">
       <div className="footer-content">
@@ -15,6 +17,12 @@ export function Footer() {
           Datenschutz
         </Link>
       </div>
+
+      <hr className={"divider"} />
+
+      <p className="text-sm text-muted-foreground footer-content">
+        {appleDesignResourcesLegal}
+      </p>
     </div>
   );
 }

@@ -1,17 +1,3 @@
-
-  
-  .content-paragraph {
-    margin-top: 10px;
-    line-height: 1.7;
-  }
-  
-  /* Link and email styling */
-  .gray-link {
-    color: gray;
-    text-decoration: none;
-  }
-  
-  .gray-link:hover {
-    color: darkgrey;
-    text-decoration: underline;
-  }
+.datenschutzbestimmungen {
+  text-align: left;
+}

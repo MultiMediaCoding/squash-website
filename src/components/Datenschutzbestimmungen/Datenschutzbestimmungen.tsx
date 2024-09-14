@@ -5,7 +5,7 @@ import { NavigationBar } from "../Navigation/NavigationBar";
 
 export const Datenschutzbestimmungen: React.FC = () => {
   return (
-    <div>
+    <div className="datenschutzbestimmungen">
       <NavigationBar></NavigationBar>
       <br></br>
       <br></br>

@@ -8,7 +8,7 @@ import {
   NavigationMenuList,
   navigationMenuTriggerStyle,
 } from "../ui/navigation-menu";
-import squashLogo from "/images/squash-logo.svg";
+import squashLogo from "/images/logo-wordmark.svg";
 import "./NavigationBar.css";
 
 export function NavigationBar({ backgroundColor = "bg-background" }) {

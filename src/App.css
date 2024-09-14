@@ -3,3 +3,14 @@
   padding: 2rem;
   text-align: center;
 }
+
+/* Link and email styling */
+.gray-link {
+  color: gray;
+  text-decoration: none;
+}
+
+.gray-link:hover {
+  color: darkgrey;
+  text-decoration: underline;
+}

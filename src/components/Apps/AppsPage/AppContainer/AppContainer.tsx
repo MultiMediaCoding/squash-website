@@ -13,13 +13,17 @@ export function AppContainer({ app }: { app: App }) {
       <div className={"iconContainer"}>
         <img className={"containerAppIcon"} src={app.icon}></img>
       </div>
-      <div className="text-lg font-semibold">{app.name}</div>
-      <small
-        style={{ color: "#A0A0A0", lineHeight: "1.4" }}
-        className="text-sm font-regular leading-none"
-      >
-        {app.shortDescription}
-      </small>
+      <div>
+        <div className="text-lg font-semibold" style={{ marginBottom: "-4px" }}>
+          {app.name}
+        </div>
+        <small
+          style={{ color: "#A0A0A0", lineHeight: "1.4" }}
+          className="text-sm font-regular leading-none"
+        >
+          {app.shortDescription}
+        </small>
+      </div>
     </button>
   );
 }
