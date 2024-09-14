@@ -2,6 +2,7 @@ import "./App.css";
 import { DevelopersHeader } from "./components/Home/DevelopersHeader";
 import { NavigationBar } from "./components/Navigation/NavigationBar";
 import { AboutPage } from "./components/About/AboutPage";
+import { Impressum } from "./components/Impressum/Impressum";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import { FAQ } from "./components/Home/FAQ";
@@ -11,6 +12,7 @@ import { AppPreviewPage } from "./components/Apps/AppPreview/view/AppPreviewPage
 import { apps } from "./components/Apps/model/Apps";
 import ScrollToTop from "./components/Common/ScrollToTop";
 import { AppBoxes } from "./components/AppBoxes";
+import { Footer } from "./components/Home/Footer/Footer";
 
 export function Home() {
   return (
@@ -23,6 +25,7 @@ export function Home() {
       <FAQ></FAQ>
       <br></br>
       <br></br>
+      <Footer></Footer>
     </div>
   );
 }
@@ -37,6 +40,7 @@ function App() {
           <Route path="/apps" element={<AppsPage />} />
           <Route path="/support" element={<SupportPage />} />
           <Route path="/about" element={<AboutPage />} />
+          <Route path="/impressum" element={<Impressum />} />
           {apps.map((app) => (
             <Route path={`/apps/${app.name}`} element={<AppPreviewPage />} />
           ))}

@@ -1,0 +1,21 @@
+.footer {
+  margin: 0 -2rem -2rem -2rem;
+  padding-bottom: 2rem;
+  background-color: #f0f0f0;
+  padding: 20px 0 40px 0;
+}
+
+.footer-content {
+  max-width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: left;
+}
+
+@media (max-width: calc(1024px + 5rem)) {
+  .footer-content {
+    margin-left: 2rem;
+  }
+}
