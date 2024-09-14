@@ -1,6 +1,6 @@
 import { BannerElement } from "../Common/BannerElement";
 import { InfoElement } from "../Common/InfoElement";
-import { FAQ } from "../Home/FAQ";
+import { FAQ } from "../Home/Footer/FAQ";
 import { NavigationBar } from "../Navigation/NavigationBar";
 
 export function SupportPage() {

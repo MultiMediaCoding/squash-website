@@ -5,7 +5,7 @@ import { AboutPage } from "./components/About/AboutPage";
 import { Impressum } from "./components/Impressum/Impressum";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import { FAQ } from "./components/Home/FAQ";
+
 import { SupportPage } from "./components/Support/SupportPage";
 import { AppsPage } from "./components/Apps/AppsPage/AppsPage";
 import { AppPreviewPage } from "./components/Apps/AppPreview/view/AppPreviewPage";
@@ -14,6 +14,7 @@ import ScrollToTop from "./components/Common/ScrollToTop";
 import { AppBoxes } from "./components/AppBoxes";
 import { Footer } from "./components/Home/Footer/Footer";
 import { Datenschutzbestimmungen } from "./components/Datenschutzbestimmungen/Datenschutzbestimmungen";
+import { FAQ } from "./components/Home/Footer/FAQ";
 
 export function Home() {
   return (
