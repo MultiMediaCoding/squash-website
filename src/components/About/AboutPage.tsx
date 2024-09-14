@@ -5,6 +5,7 @@ import founders from "/images/About/founders.jpeg";
 import founders2 from "/images/About/founders2.jpeg";
 import { AboutPhoto } from "./AboutPhoto";
 import { NavigationBar } from "../Navigation/NavigationBar";
+import { Datenschutzbestimmungen } from "../Datenschutzbestimmungen/Datenschutzbestimmungen"
 
 export function AboutPage() {
   return (
@@ -36,6 +37,7 @@ export function AboutPage() {
           subtitle="Hans und Lovis 2024"
         ></AboutPhoto>
       </div>
+      <Datenschutzbestimmungen></Datenschutzbestimmungen>
     </div>
   );
 }
