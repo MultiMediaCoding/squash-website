@@ -1,4 +1,4 @@
-import { CSSProperties } from "react";
+import { CSSProperties, ReactNode } from "react";
 import "./InfoElement.css";
 
 export function InfoElement({
@@ -9,7 +9,7 @@ export function InfoElement({
 }: {
   title: string;
   longTitle: string;
-  description: string;
+  description: ReactNode;
   textAlign?: string;
 }) {
   return (
@@ -20,10 +20,9 @@ export function InfoElement({
       className="infoElement"
     >
       <h1
-        style={{ fontSize: 40, marginBottom: -2}}
+        style={{ fontSize: 40, marginBottom: -2 }}
         className="scroll-m-20 text-4xl font-bold tracking-tight lg:text-5xl"
       >
-        {" "}
         {title}
       </h1>
       <h4
@@ -38,7 +37,7 @@ export function InfoElement({
           color: "#AFAFAF",
           paddingLeft: textAlign == "center" ? 40 : 0,
           paddingRight: textAlign == "center" ? 40 : 0,
-          marginTop: -1
+          marginTop: -1,
         }}
       >
         {description}
