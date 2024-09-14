@@ -13,6 +13,7 @@ import { apps } from "./components/Apps/model/Apps";
 import ScrollToTop from "./components/Common/ScrollToTop";
 import { AppBoxes } from "./components/AppBoxes";
 import { Footer } from "./components/Home/Footer/Footer";
+import { Datenschutzbestimmungen } from "./components/Datenschutzbestimmungen/Datenschutzbestimmungen";
 
 export function Home() {
   return (
@@ -41,6 +42,7 @@ function App() {
           <Route path="/support" element={<SupportPage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/impressum" element={<Impressum />} />
+          <Route path="/datenschutz" element={<Datenschutzbestimmungen />} />
           {apps.map((app) => (
             <Route path={`/apps/${app.name}`} element={<AppPreviewPage />} />
           ))}
