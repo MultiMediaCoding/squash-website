@@ -30,7 +30,7 @@ export function FAQ() {
       </h1>
       <Accordion type="single" collapsible>
         <AccordionItem value="item-1">
-          <AccordionTrigger>
+          <AccordionTrigger className="accordion-trigger">
             Who is behind Squash GbR and what is your mission?
           </AccordionTrigger>
           <AccordionContent className="accordion-content">
@@ -43,7 +43,7 @@ export function FAQ() {
         </AccordionItem>
 
         <AccordionItem value="item-2">
-          <AccordionTrigger>
+        <AccordionTrigger className="accordion-trigger">
             What does it mean that you develop native applications?
           </AccordionTrigger>
           <AccordionContent className="accordion-content">
@@ -55,7 +55,7 @@ export function FAQ() {
         </AccordionItem>
 
         <AccordionItem value="item-3">
-          <AccordionTrigger>
+        <AccordionTrigger className="accordion-trigger">
             How can I contact you if I am interested in your software?
           </AccordionTrigger>
           <AccordionContent className="accordion-content">
@@ -69,7 +69,7 @@ export function FAQ() {
         </AccordionItem>
 
         <AccordionItem value="item-4">
-          <AccordionTrigger>
+        <AccordionTrigger className="accordion-trigger">
             Who can benefit from using your apps?
           </AccordionTrigger>
           <AccordionContent className="accordion-content">

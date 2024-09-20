@@ -10,3 +10,17 @@
 .developerHeader {
   width: 220px;
 }
+
+
+.responsive-logo {
+  width: 350px;
+  padding: 30px;
+}
+
+@media (min-width: 780px) {
+  .responsive-logo {
+    width: 400px;
+    height: auto;
+    padding: 30px;
+  }
+}
