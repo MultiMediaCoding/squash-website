@@ -11,12 +11,14 @@ export function BannerElement({
   textAlign?: string;
 }) {
   return (
-    <div
-      style={{ textAlign: textAlign as CSSProperties["textAlign"] }}
-      className="bannerElement"
-    >
-      <div className="text-lg font-medium">{title}</div>
-      <p style={{ color: "#868686" }}>{content}</p>
+    <div className="banner">
+      <div
+        style={{ textAlign: textAlign as CSSProperties["textAlign"] }}
+        className="banner-content"
+      >
+        <div className="text-lg font-medium">{title}</div>
+        <p style={{ color: "#868686" }}>{content}</p>
+      </div>
     </div>
   );
 }

@@ -2,6 +2,7 @@ import { NavigationBar } from "../../Navigation/NavigationBar";
 import { AppContainer } from "./AppContainer/AppContainer";
 import "./AppsPage.css";
 import { apps } from "../model/Apps";
+import { Footer } from "../../Home/Footer/Footer";
 
 export function AppsPage() {
   return (
@@ -30,6 +31,10 @@ export function AppsPage() {
           <AppContainer app={app}></AppContainer>
         ))}
       </div>
+
+      <br></br>
+      <br></br>
+      <Footer></Footer>
     </div>
   );
 }

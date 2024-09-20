@@ -8,13 +8,10 @@ import { AppHeader } from "../AppHeader/view/AppHeader";
 import { MockupFeature } from "../MockupFeature/view/MockupFeature";
 import { OtherProducts } from "../OtherProducts/OtherProducts";
 import { PhotoCarousel } from "../PhotoCarousel/view/PhotoCarousel";
-import { useLocation } from "react-router-dom";
 import { App } from "../../model/App";
+import { Footer } from "../../../Home/Footer/Footer";
 
-export function AppPreviewPage() {
-  const location = useLocation();
-  const { app } = (location.state as { app: App }) || {};
-
+export function AppPreviewPage({ app }: { app: App }) {
   const displayPrice = app.price === 0 ? "Free" : `$${app.price}`;
 
   return (
@@ -86,6 +83,9 @@ export function AppPreviewPage() {
       <br></br>
       <br></br>
       <OtherProducts app={app}></OtherProducts>
+      <br></br>
+      <br></br>
+      <Footer></Footer>
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import { BannerElement } from "../Common/BannerElement";
 import { InfoElement } from "../Common/InfoElement";
 import { FAQ } from "../Home/Footer/FAQ";
+import { Footer } from "../Home/Footer/Footer";
 import { NavigationBar } from "../Navigation/NavigationBar";
 
 export function SupportPage() {
@@ -33,6 +34,7 @@ export function SupportPage() {
       <FAQ></FAQ>
       <br></br>
       <br></br>
+      <Footer></Footer>
     </div>
   );
 }

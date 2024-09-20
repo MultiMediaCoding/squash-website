@@ -1,9 +1,14 @@
-.bannerElement {
+.banner {
+  background-color: #f0f0f0;
+  padding: 40px 0 40px 0;
   width: 100vw;
-  margin: 0 -2rem 0 -2rem;
-  padding: 38px 30px 38px 30px;
-  background-color: #f1f1f1;
+  margin-left: calc(50% - 50vw);
+}
 
+.banner-content {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding-left: 2rem;
   display: flex;
   flex-direction: column;
   gap: 8px;

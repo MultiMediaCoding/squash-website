@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import "./Footer.css";
 
 export function Footer() {
@@ -10,12 +9,20 @@ export function Footer() {
         <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight">
           Legal
         </h3>
-        <Link className="text-xl text-muted-foreground" to="/impressum">
+        <a
+          href="/impressum"
+          target="_blank"
+          className="text-xl text-muted-foreground gray-link"
+        >
           Impressum
-        </Link>
-        <Link className="text-xl text-muted-foreground" to="/datenschutz">
+        </a>
+        <a
+          href="/datenschutz"
+          target="_blank"
+          className="text-xl text-muted-foreground gray-link"
+        >
           Datenschutz
-        </Link>
+        </a>
       </div>
 
       <hr className={"divider"} />

@@ -5,7 +5,6 @@ import { AboutPage } from "./components/About/AboutPage";
 import { Impressum } from "./components/Impressum/Impressum";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-
 import { SupportPage } from "./components/Support/SupportPage";
 import { AppsPage } from "./components/Apps/AppsPage/AppsPage";
 import { AppPreviewPage } from "./components/Apps/AppPreview/view/AppPreviewPage";
@@ -45,7 +44,11 @@ function App() {
           <Route path="/impressum" element={<Impressum />} />
           <Route path="/datenschutz" element={<Datenschutzbestimmungen />} />
           {apps.map((app) => (
-            <Route path={`/apps/${app.name}`} element={<AppPreviewPage />} />
+            <Route
+              key={app.name}
+              path={`/apps/${app.name}`}
+              element={<AppPreviewPage app={app} />}
+            />
           ))}
         </Routes>
       </div>
