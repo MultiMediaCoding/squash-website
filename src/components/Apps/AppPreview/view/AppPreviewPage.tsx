@@ -10,8 +10,13 @@ import { OtherProducts } from "../OtherProducts/OtherProducts";
 import { PhotoCarousel } from "../PhotoCarousel/view/PhotoCarousel";
 import { App } from "../../model/App";
 import { Footer } from "../../../Home/Footer/Footer";
+import { useEffect } from "react";
 
 export function AppPreviewPage({ app }: { app: App }) {
+  useEffect(() => {
+    document.title = app.name;
+  }, []);
+
   const displayPrice = app.price === 0 ? "Free" : `$${app.price}`;
 
   return (
