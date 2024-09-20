@@ -1,6 +1,6 @@
-import { BannerElement } from "../Common/BannerElement";
-import { InfoElement } from "../Common/InfoElement";
-import { FAQ } from "../Home/Footer/FAQ";
+import { BannerElement } from "../Common/BannerElement/BannerElement";
+import { InfoElement } from "../Common/InfoElement/InfoElement";
+import { FAQ } from "../Common/FAQ/FAQ";
 import { Footer } from "../Home/Footer/Footer";
 import { NavigationBar } from "../Navigation/NavigationBar";
 

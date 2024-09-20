@@ -1,5 +1,4 @@
 "use client";
-import developers from "/images/Home/Developers.png";
 import "./DevelopersHeader.css";
 
 export function DevelopersHeader() {
@@ -9,7 +8,10 @@ export function DevelopersHeader() {
       <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
         Two young developers
       </h1>
-      <p className="text-xl text-muted-foreground" style={{marginBottom: "80px" }}>
+      <p
+        className="text-xl text-muted-foreground"
+        style={{ marginBottom: "80px" }}
+      >
         Building apps that matter.
       </p>
     </div>

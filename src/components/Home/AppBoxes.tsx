@@ -1,7 +1,7 @@
 import { CSSProperties } from "react";
-import { isymbols } from "../components/Apps/model/apps/iSymbols";
-import { skationary } from "../components/Apps/model/apps/Skationary";
-import { PresentationBox } from "./PresentationBox";
+import { isymbols } from "../Apps/model/apps/iSymbols";
+import { skationary } from "../Apps/model/apps/Skationary";
+import { PresentationBox } from "../Common/PresentationBox/PresentationBox";
 import isymbolsMockup from "/images/Home/iSymbolsMockup.png";
 import skationaryMockup from "/images/Home/SkationaryMockup.png";
 
@@ -10,8 +10,7 @@ const cards = [
     image: isymbolsMockup,
     title: "iSymbols for iOS",
     subtitle: "Your companion for Icon Design",
-    description:
-      "Effortlessly craft stunning icons using Apple's SF Symbols.",
+    description: "Effortlessly craft stunning icons using Apple's SF Symbols.",
     app: isymbols,
     alignItems: "left",
   },

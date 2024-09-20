@@ -4,7 +4,7 @@ import {
   TableCaption,
   TableCell,
   TableRow,
-} from "../../components/ui/table";
+} from "../../ui/table";
 
 import "./AppDetailTable.css";
 

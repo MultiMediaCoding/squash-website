@@ -1,35 +1,14 @@
 import "./App.css";
-import { DevelopersHeader } from "./components/Home/DevelopersHeader";
-import { NavigationBar } from "./components/Navigation/NavigationBar";
 import { AboutPage } from "./components/About/AboutPage";
 import { Impressum } from "./components/Impressum/Impressum";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
 import { SupportPage } from "./components/Support/SupportPage";
 import { AppsPage } from "./components/Apps/AppsPage/AppsPage";
 import { AppPreviewPage } from "./components/Apps/AppPreview/view/AppPreviewPage";
 import { apps } from "./components/Apps/model/Apps";
 import ScrollToTop from "./components/Common/ScrollToTop";
-import { AppBoxes } from "./components/AppBoxes";
-import { Footer } from "./components/Home/Footer/Footer";
 import { Datenschutzbestimmungen } from "./components/Datenschutzbestimmungen/Datenschutzbestimmungen";
-import { FAQ } from "./components/Home/Footer/FAQ";
-
-export function Home() {
-  return (
-    <div>
-      <NavigationBar></NavigationBar>
-      <DevelopersHeader></DevelopersHeader>
-      <AppBoxes></AppBoxes>
-      <br></br>
-      <br></br>
-      <FAQ></FAQ>
-      <br></br>
-      <br></br>
-      <Footer></Footer>
-    </div>
-  );
-}
+import { Home } from "./components/Home/Home";
 
 function App() {
   return (

@@ -1,5 +1,5 @@
-import { AppDetailTable } from "../../../Common/AppDetailTable";
-import { InfoElement } from "../../../Common/InfoElement";
+import { AppDetailTable } from "../../../Common/AppDetailTable/AppDetailTable";
+import { InfoElement } from "../../../Common/InfoElement/InfoElement";
 import { NavigationBar } from "../../../Navigation/NavigationBar";
 import { AppDownloadElement } from "../AppDownloadElement/AppDownloadElement";
 import { CommentSection } from "../CommentSection/CommentSection";

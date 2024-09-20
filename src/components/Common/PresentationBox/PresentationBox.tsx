@@ -1,8 +1,8 @@
 import "./PresentationBox.css";
 import { CSSProperties, useEffect, useState } from "react";
-import { Button } from "./ui/button";
+import { Button } from "../../ui/button";
 import { useNavigate } from "react-router-dom";
-import { App } from "./Apps/model/App";
+import { App } from "../../Apps/model/App";
 
 export function PresentationBox({
   image,

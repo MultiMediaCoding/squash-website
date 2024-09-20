@@ -1,6 +1,6 @@
 import React from "react";
 import "./Datenschutzbestimmungen.css";
-import { InfoElement } from "../Common/InfoElement";
+import { InfoElement } from "../Common/InfoElement/InfoElement";
 import { NavigationBar } from "../Navigation/NavigationBar";
 
 export const Datenschutzbestimmungen: React.FC = () => {
