@@ -12,6 +12,7 @@
   margin-bottom: 20px;
   object-fit: contain;
   padding: 20px;
+  transition: ease all .2s;
 }
 
 .content {

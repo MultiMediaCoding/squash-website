@@ -41,6 +41,7 @@ export const lindenhofpark: App = {
       description:
         "Explore each tree’s biological facts complete with stunning images to enrich your experience of Lindenhof Park’s natural beauty. Learn about tree bark, leaf shapes, fruits, and the animals that call these trees home.",
       alignment: "left",
+      softwareTarget: "iOS"
     },
 
     {
@@ -53,6 +54,7 @@ export const lindenhofpark: App = {
       description:
         "Explore Lindenhof’s history, including old ruins, monuments, and historical buildings. Interesting side facts will enrich your walk through the park.",
       alignment: "right",
+      softwareTarget: "iOS"
     },
     {
 
@@ -62,6 +64,7 @@ export const lindenhofpark: App = {
       description:
         "Explore Lindenhof Park with ease using the interactive map. Track your location in real-time and uncover details and photos about nearby trees, monuments, and sites as you walk by.",
       alignment: "left",
+      softwareTarget: "iOS"
     },
   ],
   comments: [],

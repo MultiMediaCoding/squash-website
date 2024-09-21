@@ -41,6 +41,7 @@ export const itask: App = {
       description:
         "Maximize your productivity with a distraction-free interface designed to focus on what’s essential.",
       alignment: "left",
+      softwareTarget: "iOS"
     },
 
     {
@@ -52,6 +53,7 @@ export const itask: App = {
       description:
         "Reduce procrastination by breaking your tasks into manageable steps, ensuring you maintain a clear overview.",
       alignment: "right",
+      softwareTarget: "iOS"
     },
   ],
   comments: [],

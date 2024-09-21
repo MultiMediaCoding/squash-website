@@ -11,12 +11,23 @@
     align-items: flex-start;
     gap: 12px;
   }
+
+  /* Default mobile style */
   .mockupImage {
     height: 450px;
     max-width: fit-content;
     margin-inline: auto;
     margin-bottom: 20px;
   }
+
+  /* macOS app mobile style */
+  .macMobile {
+    height: 350px;
+    max-width: 100%;
+    margin-inline: auto;
+    margin-bottom: 20px;
+  }
+
   .right {
     display: none;
   }
@@ -26,6 +37,7 @@
   .mockupImage {
     height: 420px;
   }
+
   .mockupBox {
     display: flex;
     align-items: center;

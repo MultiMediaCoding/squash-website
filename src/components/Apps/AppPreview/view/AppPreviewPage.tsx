@@ -53,6 +53,7 @@ export function AppPreviewPage({ app }: { app: App }) {
             description: feature.description,
             image: feature.image,
             alignment: feature.alignment,
+            softwareTarget: feature.softwareTarget,
           }}
         ></MockupFeature>
       ))}

@@ -4,10 +4,11 @@ import "./MockupFeature.css";
 import { MockupFeatureProps } from "../model/MockupFeatureProps";
 
 export function MockupFeature({
-  mockupFeatureProps: { image, title, subtitle, description, alignment },
+  mockupFeatureProps,
 }: {
   mockupFeatureProps: MockupFeatureProps;
 }) {
+  const { image, title, subtitle, description, alignment, softwareTarget } = mockupFeatureProps;
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
 
   useEffect(() => {
@@ -16,15 +17,17 @@ export function MockupFeature({
     };
 
     window.addEventListener("resize", handleResize);
-
-    // Cleanup-Funktion, um den Event Listener zu entfernen, wenn die Komponente entladen wird
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  const mockupImageClass = isMobile
+    ? (softwareTarget === "macOS" ? "macMobile" : "mockupImage") 
+    : "mockupImage";
+
   return (
     <div className="mockupBox">
-      {alignment == "left" || isMobile ? (
-        <img className={"mockupImage"} src={image} />
+      {alignment === "left" || isMobile ? (
+        <img className={mockupImageClass} src={image} alt={title} />
       ) : null}
 
       <InfoElement
@@ -32,9 +35,10 @@ export function MockupFeature({
         longTitle={subtitle}
         description={description}
         textAlign="left"
-      ></InfoElement>
-      {alignment == "right" ? (
-        <img className={"mockupImage right"} src={image} />
+      />
+
+      {alignment === "right" ? (
+        <img className={`mockupImage right`} src={image} alt={title} />
       ) : null}
     </div>
   );

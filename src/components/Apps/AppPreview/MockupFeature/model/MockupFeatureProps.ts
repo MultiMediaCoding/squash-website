@@ -6,4 +6,5 @@ export interface MockupFeatureProps {
   subtitle: string;
   description: string;
   alignment: CSSProperties["textAlign"];
+  softwareTarget: string;
 }

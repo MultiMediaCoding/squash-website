@@ -43,6 +43,7 @@ export const notely: App = {
       description:
         "Get notifications from Ntfy as native macOS push notifications, seamlessly integrating with your system’s notification center.",
       alignment: "left",
+      softwareTarget: "macOS"
     },
 
     {
@@ -52,6 +53,8 @@ export const notely: App = {
       description:
         "Notely makes it simple to manage all your ntfy channels with a clear and intuitive interface for adding and removing the ones you want the app to listen to.",
       alignment: "right",
+      softwareTarget: "macOS"
+
     },
     {
       image: "/images/Apps/Notely/MockupFeatures/InYourMenuBar.png",
@@ -60,6 +63,8 @@ export const notely: App = {
       description:
         "The menu bar integration ensures HiddenDesk is always one click away and runs seamless on your Mac.",
       alignment: "left",
+      softwareTarget: "macOS"
+
     },
   ],
   comments: [],

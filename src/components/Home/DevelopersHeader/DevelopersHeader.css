@@ -15,6 +15,7 @@
 .responsive-logo {
   width: 350px;
   padding: 30px;
+  transition: ease all .2s;
 }
 
 @media (min-width: 780px) {
