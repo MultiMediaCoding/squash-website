@@ -5,7 +5,8 @@ export const hiddenDesk: App = {
   shortDescription: "Declutter your mac destop",
   icon: "/images/Apps/HiddenDesk/icon.png",
   pageTitle: "Description",
-  pageSubtitle: "Keeps your Mac desktop tidy and hides all folders and documents with just a Mousecklick.",
+  pageSubtitle:
+    "Keeps your Mac desktop tidy and hides all folders and documents with just a Mousecklick.",
   pageDescription: "Hidden Desk makes it easy to let your mac shine",
   previewImages: [
     "/images/Apps/HiddenDesk/PreviewImages/Home.png",
@@ -38,7 +39,7 @@ export const hiddenDesk: App = {
       description:
         "HiddenDesk boasts a simple, intuitive design. Its straightforward interface makes hiding your desktop items effortless, so you can focus on what matters.",
       alignment: "left",
-      softwareTarget: "macOS"
+      softwareTarget: "macOS",
     },
     {
       image: "/images/Apps/HiddenDesk/MockupFeatures/HomeDark.png",
@@ -47,8 +48,7 @@ export const hiddenDesk: App = {
       description:
         "The app layout seamlessly adapts to Dark Mode, ensuring that the MacBook screen preview, visible in a compact view, aligns with the wallpaper and Dark Mode settings.",
       alignment: "right",
-      softwareTarget: "macOS"
-
+      softwareTarget: "macOS",
     },
     {
       image: "/images/Apps/HiddenDesk/MockupFeatures/HomeLight.png",
@@ -57,33 +57,10 @@ export const hiddenDesk: App = {
       description:
         "Quickly hide all desktop clutter with a simple Keyboard Shortcut. Press it again to instantly reveal your files and folders when you need them!",
       alignment: "left",
-      softwareTarget: "macOS"
-
+      softwareTarget: "macOS",
     },
   ],
-  comments: [
-    {
-      id: crypto.randomUUID(),
-      title: "Fantastic Tool!",
-      description:
-        "This app has every icon I need for my projects. A must-have for designers!",
-      rating: 5,
-    },
-    {
-      id: crypto.randomUUID(),
-      title: "Very useful",
-      description:
-        "A great collection of SF Symbols, perfect for my app development needs.",
-      rating: 4,
-    },
-    {
-      id: crypto.randomUUID(),
-      title: "Love the simplicity!",
-      description:
-        "The app is straightforward and easy to navigate. Found all the symbols I was looking for in seconds.",
-      rating: 5,
-    },
-  ],
+  comments: [],
   link: "",
   version: "1.0",
   size: "1,4 MB",

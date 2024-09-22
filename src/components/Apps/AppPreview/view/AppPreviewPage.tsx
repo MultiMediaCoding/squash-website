@@ -45,36 +45,36 @@ export function AppPreviewPage({ app }: { app: App }) {
       <br></br>
       <FeatureCards app={app}></FeatureCards>
 
-      {app.mockupFeatures.map((feature, _) => (
-        <MockupFeature
-          mockupFeatureProps={{
-            title: feature.title,
-            subtitle: feature.subtitle,
-            description: feature.description,
-            image: feature.image,
-            alignment: feature.alignment,
-            softwareTarget: feature.softwareTarget,
-          }}
-        ></MockupFeature>
+      {app.mockupFeatures.map((feature, index: number) => (
+        <div>
+          <MockupFeature
+            mockupFeatureProps={{
+              title: feature.title,
+              subtitle: feature.subtitle,
+              description: feature.description,
+              image: feature.image,
+              alignment: feature.alignment,
+              softwareTarget: feature.softwareTarget,
+            }}
+          ></MockupFeature>
+
+          {app.comments.length > 0 && index === 1 ? (
+            <div>
+              <br></br>
+              <br></br>
+              <br></br>
+              <br></br>
+              <CommentSection
+                comments={app.comments}
+                speed={50000}
+              ></CommentSection>
+              <br></br>
+              <br></br>
+            </div>
+          ) : null}
+        </div>
       ))}
 
-      <br></br>
-      <br></br>
-
-      {app.comments.length > 0 ? (
-        <div>
-          <br></br>
-          <br></br>
-          <CommentSection
-            comments={app.comments}
-            speed={40000}
-          ></CommentSection>
-          <br></br>
-          <br></br>
-        </div>
-      ) : (
-        <div></div>
-      )}
       <br></br>
       <br></br>
       <AppDownloadElement app={app}></AppDownloadElement>
