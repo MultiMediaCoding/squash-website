@@ -18,7 +18,7 @@ export const isymbols: App = {
       name: "Save Icons Instantly​",
       description:
         "Export icons as PNG files for seamless use in your projects.",
-      image: "/images/Apps/iSymbols/Features/SaveIconsInstantly.png",
+      image: "/images/Apps/iSymbols/Features/SaveIconsInstantly​.png",
     },
     {
       name: "Preset gradients",
