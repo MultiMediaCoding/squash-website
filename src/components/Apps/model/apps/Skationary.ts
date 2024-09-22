@@ -1,3 +1,4 @@
+import { SoftwareTarget } from "../../AppPreview/MockupFeature/model/MockupFeatureProps";
 import { App } from "../App";
 import { hiddenDesk } from "./HiddenDesk";
 import { isymbols } from "./iSymbols";
@@ -6,10 +7,9 @@ export const skationary: App = {
   name: "Skationary",
   shortDescription: "All your skatetricks and clips",
   icon: "/images/Apps/Skationary/icon.png",
-  pageTitle: "Description",
-  pageSubtitle: "Skationary makes tracking tricks you learn effortless and fun by letting you add video clips and automatically organizing them for you.",
-  pageDescription:
-    "Your smart progress tracker for skateboarding",
+  pageTitle: "Your smart progress tracker for skateboarding",
+  pageSubtitle:
+    "Skationary makes tracking tricks you learn effortless and fun by letting you add video clips and automatically organizing them for you.",
   previewImages: [
     "/images/Apps/Skationary/PreviewImages/Videos.png",
     "/images/Apps/Skationary/PreviewImages/TrickDetails.png",
@@ -44,7 +44,7 @@ export const skationary: App = {
       description:
         "Easily browse through all your saved tricks in one place and review your notes and videos. Looking for something specific? Just search by notes or titles.",
       alignment: "left",
-      softwareTarget: "iOS"
+      softwareTarget: SoftwareTarget.iOS,
     },
 
     {
@@ -54,7 +54,7 @@ export const skationary: App = {
       description:
         "Access detailed information for each trick, including the video clip, trick name, difficulty level, notes, and creation date.",
       alignment: "right",
-      softwareTarget: "iOS"
+      softwareTarget: SoftwareTarget.iOS,
     },
     {
       image: "/images/Apps/Skationary/MockupFeatures/AddNewTricks.png",
@@ -63,7 +63,7 @@ export const skationary: App = {
       description:
         "Upload videos, name your trick, set the difficulty, and add notes to track your progress. You can also link your skatepark.",
       alignment: "left",
-      softwareTarget: "iOS"
+      softwareTarget: SoftwareTarget.iOS,
     },
     {
       image: "/images/Apps/Skationary/MockupFeatures/EnjoyYourClips.png",
@@ -72,7 +72,7 @@ export const skationary: App = {
       description:
         "Watch your recorded skate clips, track your progress, and even slow them down to 0.5 speed for detailed review.",
       alignment: "right",
-      softwareTarget: "iOS"
+      softwareTarget: SoftwareTarget.iOS,
     },
   ],
   comments: [],

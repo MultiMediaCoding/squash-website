@@ -6,5 +6,10 @@ export interface MockupFeatureProps {
   subtitle: string;
   description: string;
   alignment: CSSProperties["textAlign"];
-  softwareTarget: string;
+  softwareTarget: SoftwareTarget;
+}
+
+export enum SoftwareTarget {
+  iOS = "iOS",
+  macOS = "macOS",
 }

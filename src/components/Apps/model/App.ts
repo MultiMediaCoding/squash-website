@@ -8,7 +8,6 @@ export interface App {
   icon: string;
   pageTitle: string;
   pageSubtitle: string;
-  pageDescription: string;
   previewImages: string[];
   features: Feature[];
   mockupFeatures: MockupFeatureProps[];

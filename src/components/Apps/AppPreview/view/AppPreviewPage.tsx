@@ -28,14 +28,19 @@ export function AppPreviewPage({ app }: { app: App }) {
         name={app.name}
         slogan={app.shortDescription}
         icon={app.icon}
+        link={app.link}
       ></AppHeader>
+      <br></br>
+      <br></br>
       <br></br>
       <br></br>
       <InfoElement
         title={app.pageTitle}
-        longTitle={app.pageDescription}
+        longTitle={""}
         description={app.pageSubtitle}
       ></InfoElement>
+      <br></br>
+      <br></br>
       <br></br>
       <br></br>
       <PhotoCarousel app={app}></PhotoCarousel>
@@ -44,7 +49,6 @@ export function AppPreviewPage({ app }: { app: App }) {
       <br></br>
       <br></br>
       <FeatureCards app={app}></FeatureCards>
-
       {app.mockupFeatures.map((feature, index: number) => (
         <div>
           <MockupFeature
@@ -74,7 +78,6 @@ export function AppPreviewPage({ app }: { app: App }) {
           ) : null}
         </div>
       ))}
-
       <br></br>
       <br></br>
       <AppDownloadElement app={app}></AppDownloadElement>

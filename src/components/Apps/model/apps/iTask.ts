@@ -1,3 +1,4 @@
+import { SoftwareTarget } from "../../AppPreview/MockupFeature/model/MockupFeatureProps";
 import { App } from "../App";
 import { bodenseeTemperatur } from "./BodenseeTemperatur";
 import { skationary } from "./Skationary";
@@ -6,10 +7,10 @@ export const itask: App = {
   name: "iTask",
   shortDescription: "Focus-Boosting To-Dos",
   icon: "/images/Apps/iTask/icon.png",
-  pageTitle: "Description",
-  pageSubtitle: "iTask is a sleek to-do list app that lets you easily organize and customize your tasks. Keep track of what’s done.",
-  pageDescription:
-    "Regain focus over your daily tasks",
+  pageTitle: "Regain focus over your daily tasks",
+  pageSubtitle:
+    "iTask is a sleek to-do list app that lets you easily organize and customize your tasks. Keep track of what’s done.",
+
   previewImages: [
     "/images/Apps/iTask/PreviewImages/TaskListEntires.png",
     "/images/Apps/iTask/PreviewImages/TaskCategories.png",
@@ -41,19 +42,17 @@ export const itask: App = {
       description:
         "Maximize your productivity with a distraction-free interface designed to focus on what’s essential.",
       alignment: "left",
-      softwareTarget: "iOS"
+      softwareTarget: SoftwareTarget.iOS,
     },
 
     {
-      image:
-      
-        "/images/Apps/iTask/MockupFeatures/Categories.png",
+      image: "/images/Apps/iTask/MockupFeatures/Categories.png",
       title: "Categories",
       subtitle: "Organize your work by grouping tasks",
       description:
         "Reduce procrastination by breaking your tasks into manageable steps, ensuring you maintain a clear overview.",
       alignment: "right",
-      softwareTarget: "iOS"
+      softwareTarget: SoftwareTarget.iOS,
     },
   ],
   comments: [],

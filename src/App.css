@@ -5,6 +5,22 @@
   max-width: 1014px;
 }
 
+.grey-box {
+  background-color: #f0f0f0;
+  padding: 40px 0 40px 0;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+}
+
+.grey-box-content {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
 /* Link and email styling */
 .gray-link {
   color: gray;

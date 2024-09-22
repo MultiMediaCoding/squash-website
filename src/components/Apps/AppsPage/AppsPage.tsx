@@ -8,7 +8,7 @@ export function AppsPage() {
   return (
     <div>
       <NavigationBar></NavigationBar>
-      <br></br>
+
       <br></br>
       <div className={"appsHeader"}>
         <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">

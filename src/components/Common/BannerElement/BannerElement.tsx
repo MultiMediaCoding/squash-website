@@ -1,5 +1,4 @@
 import { CSSProperties } from "react";
-import "./BannerElement.css";
 
 export function BannerElement({
   title,
@@ -11,10 +10,10 @@ export function BannerElement({
   textAlign?: string;
 }) {
   return (
-    <div className="banner">
+    <div className="grey-box">
       <div
         style={{ textAlign: textAlign as CSSProperties["textAlign"] }}
-        className="banner-content"
+        className="grey-box-content"
       >
         <div className="text-lg font-medium">{title}</div>
         <p style={{ color: "#868686" }}>{content}</p>

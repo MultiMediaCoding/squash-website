@@ -1,15 +1,19 @@
 import { useEffect, useState, useRef } from "react";
 import { InfoElement } from "../../../../Common/InfoElement/InfoElement";
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 import "./MockupFeature.css";
-import { MockupFeatureProps } from "../model/MockupFeatureProps";
+import {
+  MockupFeatureProps,
+  SoftwareTarget,
+} from "../model/MockupFeatureProps";
 
 export function MockupFeature({
   mockupFeatureProps,
 }: {
   mockupFeatureProps: MockupFeatureProps;
 }) {
-  const { image, title, subtitle, description, alignment, softwareTarget } = mockupFeatureProps;
+  const { image, title, subtitle, description, alignment, softwareTarget } =
+    mockupFeatureProps;
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
   const [hasAnimated, setHasAnimated] = useState(false);
   const ref = useRef<HTMLDivElement | null>(null);
@@ -34,12 +38,14 @@ export function MockupFeature({
   };
 
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, [hasAnimated]);
 
   const mockupImageClass = isMobile
-    ? (softwareTarget === "macOS" ? "macMobile" : "mockupImage") 
+    ? softwareTarget === SoftwareTarget.macOS
+      ? "macMobile"
+      : "mockupImage"
     : "mockupImage";
 
   const imageDelay = alignment === "left" ? 0 : 0.2; // Left first, right second

@@ -12,7 +12,6 @@ export function AboutPage() {
     <div className="text">
       <NavigationBar></NavigationBar>
       <br></br>
-      <br></br>
       <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
         About
       </h1>
@@ -28,14 +27,8 @@ export function AboutPage() {
         of our story!
       </p>
       <div className="aboutPagePhotos">
-        <AboutPhoto
-          image={founders}
-          subtitle="Hans und Lovis 2016"
-        ></AboutPhoto>
-        <AboutPhoto
-          image={founders2}
-          subtitle="Hans und Lovis 2024"
-        ></AboutPhoto>
+        <AboutPhoto image={founders} subtitle="Hans & Lovis 2016"></AboutPhoto>
+        <AboutPhoto image={founders2} subtitle="Hans & Lovis 2024"></AboutPhoto>
       </div>
       <br></br>
       <br></br>

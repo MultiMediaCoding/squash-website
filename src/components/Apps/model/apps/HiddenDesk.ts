@@ -1,13 +1,14 @@
+import { SoftwareTarget } from "../../AppPreview/MockupFeature/model/MockupFeatureProps";
 import { App } from "../App";
 
 export const hiddenDesk: App = {
   name: "HiddenDesk",
   shortDescription: "Declutter your mac destop",
   icon: "/images/Apps/HiddenDesk/icon.png",
-  pageTitle: "Description",
+  pageTitle: "Hidden Desk makes it easy to let your mac shine",
   pageSubtitle:
     "Keeps your Mac desktop tidy and hides all folders and documents with just a Mousecklick.",
-  pageDescription: "Hidden Desk makes it easy to let your mac shine",
+
   previewImages: [
     "/images/Apps/HiddenDesk/PreviewImages/Home.png",
     "/images/Apps/HiddenDesk/PreviewImages/Darkmode.png",
@@ -39,7 +40,7 @@ export const hiddenDesk: App = {
       description:
         "HiddenDesk boasts a simple, intuitive design. Its straightforward interface makes hiding your desktop items effortless, so you can focus on what matters.",
       alignment: "left",
-      softwareTarget: "macOS",
+      softwareTarget: SoftwareTarget.macOS,
     },
     {
       image: "/images/Apps/HiddenDesk/MockupFeatures/HomeDark.png",
@@ -48,7 +49,7 @@ export const hiddenDesk: App = {
       description:
         "The app layout seamlessly adapts to Dark Mode, ensuring that the MacBook screen preview, visible in a compact view, aligns with the wallpaper and Dark Mode settings.",
       alignment: "right",
-      softwareTarget: "macOS",
+      softwareTarget: SoftwareTarget.macOS,
     },
     {
       image: "/images/Apps/HiddenDesk/MockupFeatures/HomeLight.png",
@@ -57,7 +58,7 @@ export const hiddenDesk: App = {
       description:
         "Quickly hide all desktop clutter with a simple Keyboard Shortcut. Press it again to instantly reveal your files and folders when you need them!",
       alignment: "left",
-      softwareTarget: "macOS",
+      softwareTarget: SoftwareTarget.macOS,
     },
   ],
   comments: [],

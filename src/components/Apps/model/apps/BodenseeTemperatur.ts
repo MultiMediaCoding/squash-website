@@ -1,13 +1,13 @@
+import { SoftwareTarget } from "../../AppPreview/MockupFeature/model/MockupFeatureProps";
 import { App } from "../App";
 
 export const bodenseeTemperatur: App = {
   name: "Bodensee Temperatur",
   shortDescription: "Minimalistic lake measurements",
   icon: "/images/Apps/BodenseeTemperatur/icon.png",
-  pageTitle: "Description",
-  pageSubtitle: "Instantly access real-time lake temperatures, daily trends, and historical data with a minimalistic, visual interface.",
-  pageDescription:
-    "Lake Constance Temperature at a Glance",
+  pageTitle: "Lake Constance Temperature at a Glance",
+  pageSubtitle:
+    "Instantly access real-time lake temperatures, daily trends, and historical data with a minimalistic, visual interface.",
   previewImages: [
     "/images/Apps/BodenseeTemperatur/PreviewMockups/Blue.png",
     "/images/Apps/BodenseeTemperatur/PreviewMockups/AllColors.png",
@@ -37,9 +37,10 @@ export const bodenseeTemperatur: App = {
       image: "/images/Apps/BodenseeTemperatur/MockupFeatures/RealTimeData.png",
       title: "Real-Time Data",
       subtitle: "Get the latest temperature updates",
-      description: "Measured at Lindau’s port on Lake Constance, data is refreshed every 30 minutes. Information is saved to generate clear charts and statistics.",
+      description:
+        "Measured at Lindau’s port on Lake Constance, data is refreshed every 30 minutes. Information is saved to generate clear charts and statistics.",
       alignment: "left",
-      softwareTarget: "iOS"
+      softwareTarget: SoftwareTarget.iOS,
     },
 
     {
@@ -50,7 +51,7 @@ export const bodenseeTemperatur: App = {
       description:
         "Access a detailed temperature curve to see how the lake’s temperature has changed over time. Track historical trends and patterns.",
       alignment: "right",
-      softwareTarget: "iOS"
+      softwareTarget: SoftwareTarget.iOS,
     },
     {
       image:
@@ -60,7 +61,7 @@ export const bodenseeTemperatur: App = {
       description:
         "Color-coded indicators let you instantly see if the lake is warm or cold. Warmer colors show higher temperatures, and cooler shades represent lower ones.",
       alignment: "left",
-      softwareTarget: "iOS"
+      softwareTarget: SoftwareTarget.iOS,
     },
   ],
   comments: [],

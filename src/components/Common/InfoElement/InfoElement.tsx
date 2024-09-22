@@ -26,8 +26,8 @@ export function InfoElement({
         {title}
       </h1>
       <h4
-        style={{ fontSize: 20 }}
-        className="scroll-m-20 text-xl font-medium tracking-tight"
+        style={{ fontSize: 20, margin: "12px 0 12px 0" }}
+        className="scroll-m-20 text-xl font-semibold "
       >
         {longTitle}
       </h4>

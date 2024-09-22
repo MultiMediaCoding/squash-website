@@ -1,3 +1,4 @@
+import { SoftwareTarget } from "../../AppPreview/MockupFeature/model/MockupFeatureProps";
 import { App } from "../App";
 import { isymbols } from "./iSymbols";
 import { skationary } from "./Skationary";
@@ -6,9 +7,10 @@ export const notely: App = {
   name: "Notely",
   shortDescription: "Ntfy push notifications",
   icon: "/images/Apps/Notely/icon.png",
-  pageTitle: "Description",
-  pageSubtitle: "Receive real-time data via the Ntfy API, displayed as native push notifications on your Mac.",
-  pageDescription: "Instant notifications for your Mac",previewImages: [
+  pageTitle: "Instant notifications for your Mac",
+  pageSubtitle:
+    "Receive real-time data via the Ntfy API, displayed as native push notifications on your Mac.",
+  previewImages: [
     "/images/Apps/Notely/PreviewImages/HomeDesktop.png",
     "/images/Apps/Notely/PreviewImages/SplineStack1.png",
     "/images/Apps/Notely/PreviewImages/SplineStack2.png",
@@ -43,7 +45,7 @@ export const notely: App = {
       description:
         "Get notifications from Ntfy as native macOS push notifications, seamlessly integrating with your system’s notification center.",
       alignment: "left",
-      softwareTarget: "macOS"
+      softwareTarget: SoftwareTarget.macOS,
     },
 
     {
@@ -53,8 +55,7 @@ export const notely: App = {
       description:
         "Notely makes it simple to manage all your ntfy channels with a clear and intuitive interface for adding and removing the ones you want the app to listen to.",
       alignment: "right",
-      softwareTarget: "macOS"
-
+      softwareTarget: SoftwareTarget.macOS,
     },
     {
       image: "/images/Apps/Notely/MockupFeatures/InYourMenuBar.png",
@@ -63,8 +64,7 @@ export const notely: App = {
       description:
         "The menu bar integration ensures HiddenDesk is always one click away and runs seamless on your Mac.",
       alignment: "left",
-      softwareTarget: "macOS"
-
+      softwareTarget: SoftwareTarget.macOS,
     },
   ],
   comments: [],

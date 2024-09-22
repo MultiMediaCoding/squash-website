@@ -1,3 +1,4 @@
+import { SoftwareTarget } from "../../AppPreview/MockupFeature/model/MockupFeatureProps";
 import { App } from "../App";
 import { bodenseeTemperatur } from "./BodenseeTemperatur";
 
@@ -5,10 +6,10 @@ export const lindenhofpark: App = {
   name: "Lindenhofpark",
   shortDescription: "Discover regional nature and culture",
   icon: "/images/Apps/Lindenhofpark/icon.png",
-  pageTitle: "Description",
+  pageTitle: "Experience Lindenhof Park in a Digital App Journey",
   pageSubtitle:
     "Discover Lindenhof Park’s trees and historical landmarks with detailed info, images, and an interactive map.",
-  pageDescription: "Experience Lindenhof Park in a Digital App Journey",
+
   previewImages: [
     "/images/Apps/Lindenhofpark/PreviewImages/MapView.png",
     "/images/Apps/Lindenhofpark/PreviewImages/PlaceDetails.png",
@@ -42,7 +43,7 @@ export const lindenhofpark: App = {
       description:
         "Explore each tree’s biological facts complete with stunning images to enrich your experience of Lindenhof Park’s natural beauty. Learn about tree bark, leaf shapes, fruits, and the animals that call these trees home.",
       alignment: "left",
-      softwareTarget: "iOS",
+      softwareTarget: SoftwareTarget.iOS,
     },
 
     {
@@ -53,7 +54,7 @@ export const lindenhofpark: App = {
       description:
         "Explore Lindenhof’s history, including old ruins, monuments, and historical buildings. Interesting side facts will enrich your walk through the park.",
       alignment: "right",
-      softwareTarget: "iOS",
+      softwareTarget: SoftwareTarget.iOS,
     },
     {
       image: "/images/Apps/Lindenhofpark/MockupFeatures/InteractiveMap.png",
@@ -62,7 +63,7 @@ export const lindenhofpark: App = {
       description:
         "Explore Lindenhof Park with ease using the interactive map. Track your location in real-time and uncover details and photos about nearby trees, monuments, and sites as you walk by.",
       alignment: "left",
-      softwareTarget: "iOS",
+      softwareTarget: SoftwareTarget.iOS,
     },
   ],
   comments: [
