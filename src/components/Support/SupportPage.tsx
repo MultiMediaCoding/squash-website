@@ -2,9 +2,7 @@ import { InfoElement } from "../Common/InfoElement/InfoElement";
 import { FAQ } from "../Common/FAQ/FAQ";
 import { Footer } from "../Home/Footer/Footer";
 import { NavigationBar } from "../Navigation/NavigationBar";
-import { BannerElement } from "../Common/BannerElement/BannerElement";
 import { ContactUs } from "./ContactUs";
-import { Ban } from "lucide-react";
 
 export function SupportPage() {
   const infoElemets = [
