@@ -2,7 +2,7 @@ import "./Footer.css";
 
 export function Footer() {
   const appleDesignResourcesLegal =
-    "Apple, the Apple logo, macOS, Mac, iPhone, and iPad are trademarks of Apple&nbsp;Inc., registered in the U.S. and other countries and regions. App&nbsp;Store is a service mark of Apple&nbsp;Inc. IOS is a trademark or registered trademark of Cisco in the U.S. and other countries and is used under license.";
+    "iPhone, Mac and the Apple logo are registered trademarks of Apple Inc. registered in the U.S. and other countries. The Apple Download Badge and the Apple products (iPhone/Mac) depicted are used with permission in accordance with the Apple Design Guidelines. This website is independent from Apple Inc. and is not endorsed or sponsored by Apple.";
   return (
     <div className="footer">
       <div className="footer-content">
@@ -27,7 +27,7 @@ export function Footer() {
 
       <hr className={"divider"} />
 
-      <p className="text-sm text-muted-foreground footer-content">
+      <p className="text-sm text-muted-foreground footer-content" style={{ paddingRight: 30 }}>
         {appleDesignResourcesLegal}
       </p>
     </div>

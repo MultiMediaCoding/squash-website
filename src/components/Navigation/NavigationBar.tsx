@@ -41,7 +41,7 @@ export function NavigationBar({ backgroundColor = "bg-background" }) {
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href="about">
+          <Link href="/about">
             <NavigationMenuLink
               style={{ backgroundColor: backgroundColor }}
               className={navigationMenuTriggerStyle()}
