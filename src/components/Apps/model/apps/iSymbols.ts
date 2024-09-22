@@ -6,7 +6,8 @@ export const isymbols: App = {
   shortDescription: "Icons - easier than ever",
   icon: "/images/Apps/iSymbols/icon.png",
   pageTitle: "Description",
-  pageSubtitle: "Export Apple SF icons to your photo library and integrate them into your designs.",
+  pageSubtitle:
+    "Export Apple SF icons to your photo library and integrate them into your designs.",
   pageDescription: "A new way to use SF Symbols on mobile Devices",
   previewImages: [
     "/images/Apps/iSymbols/PreviewImages/Editor.png",
@@ -39,8 +40,7 @@ export const isymbols: App = {
       description:
         "Quickly find every icon you can imagine in the SF Symbol groups and browse thousands of different glyphs.",
       alignment: "left",
-      softwareTarget: "iOS"
-
+      softwareTarget: "iOS",
     },
 
     {
@@ -50,8 +50,7 @@ export const isymbols: App = {
       description:
         "Adjust your symbol’s size, color, radius, or even add a shadow to fit your needs. When you’re ready to use it, simply export it with one tap and save it to your phones camera roll as an image.",
       alignment: "right",
-      softwareTarget: "iOS"
-
+      softwareTarget: "iOS",
     },
     {
       image: "/images/Apps/iSymbols/MockupFeatures/EfficientSymbolSearch.png",
@@ -60,8 +59,7 @@ export const isymbols: App = {
       description:
         "The app organizes SF symbols into 20 clear categories like Communication, Weather, and Devices, ensuring you find the right symbol swiftly and easily.",
       alignment: "left",
-      softwareTarget: "iOS"
-
+      softwareTarget: "iOS",
     },
   ],
   comments: [],

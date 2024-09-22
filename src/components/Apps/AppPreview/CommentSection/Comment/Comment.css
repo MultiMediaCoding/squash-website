@@ -1,11 +1,19 @@
-.commentBox {
-  text-align: left;
-  width: 310px;
-  height: 210px;
+.comment-box {
+  width: 370px;
+  height: 220px;
   padding: 20px;
   margin: 15px;
+  text-align: left;
   background-color: white;
   border-width: 0.1px;
   border-radius: 18px;
   border-color: #afafaf;
+}
+
+.hidden-text {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  -webkit-box-orient: vertical;
 }

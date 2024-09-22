@@ -23,10 +23,17 @@ export interface Comment {
 
 export function CommentBox({ title, description, rating }: Comment) {
   return (
-    <div className={"commentBox"}>
+    <div className={"comment-box"}>
       <p className="text-xl font-semibold">{title}</p>
-      <img src={stars.get(rating)} alt="stars" style={{ marginTop: "6px" }} />
-      <p className="font-light" style={{ color: "grey", marginTop: "12px" }}>
+      <img
+        src={stars.get(rating)}
+        alt="stars"
+        style={{ marginTop: "6px", width: "70px" }}
+      />
+      <p
+        className="font-light hidden-text"
+        style={{ color: "grey", marginTop: "12px" }}
+      >
         {description}
       </p>
     </div>
