@@ -13,7 +13,7 @@ export interface App {
   features: Feature[];
   mockupFeatures: MockupFeatureProps[];
   comments: Comment[];
-  link: string;
+  deployments: Deployment[];
   version: string;
   size: string;
   category: string;
@@ -25,4 +25,20 @@ export interface Product {
   name: string;
   icon: string;
   shortDescription: string;
+}
+
+export interface Deployment {
+  link: string
+  target: DeploymentTarget
+}
+
+export enum DeploymentTarget {
+  android = "android",
+  iOS = "iOS",
+  iPadOS = "iPadOS",
+  watchOS = "watchOS",
+  tvOS = "tvOS",
+  macOS = "macOS",
+  visionOS = "visionOS",
+  web = "web"
 }

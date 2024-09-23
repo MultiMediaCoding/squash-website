@@ -1,3 +1,5 @@
+import { Deployment, DeploymentTarget } from "../../../model/App";
+import { DownloadBadges } from "../../DownloadBadge/DownloadBadges";
 import "./AppHeader.css";
 import { CommingSoonButton } from "./CommingSoonButton/CommingSoonButton";
 import downloadBadge from "/images/Apps/Common/AppStoreDownloadBadge.svg";
@@ -6,13 +8,13 @@ export function AppHeader({
   name,
   slogan,
   icon,
-  link,
+  deployments,
   isProduction,
 }: {
   name: string;
   slogan: string;
   icon: string;
-  link: string;
+  deployments: Deployment[];
   isProduction: boolean;
 }) {
   return (
@@ -28,13 +30,9 @@ export function AppHeader({
         {slogan}
       </p>
       {isProduction ? (
-        <a href={link} target="_blank" rel="noopener noreferrer">
-          <img
-            className="downloadBadge"
-            src={downloadBadge}
-            alt="Download from App Store"
-          />
-        </a>
+            <div className="deployment-badges">
+    <DownloadBadges deployments={deployments}></DownloadBadges>
+    </div>
       ) : (
         <CommingSoonButton></CommingSoonButton>
       )}

@@ -1,6 +1,7 @@
-import downloadBadge from "/images/Apps/Common/AppStoreDownloadBadge.svg";
+
 import "./AppDownloadElement.css";
 import { App } from "../../model/App";
+import { DownloadBadges } from "../DownloadBadge/DownloadBadges";
 
 export function AppDownloadElement({ app }: { app: App }) {
   return (
@@ -13,14 +14,8 @@ export function AppDownloadElement({ app }: { app: App }) {
       >
         {app.name}
       </h1>
-
-      <a href={app.link} target="_blank" rel="noopener noreferrer">
-        <img
-          className="downloadBadge"
-          src={downloadBadge}
-          alt="Download from App Store"
-        />
-      </a>
+      <DownloadBadges deployments={app.deployments}></DownloadBadges>
+     
     </div>
   );
 }

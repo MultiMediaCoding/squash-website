@@ -1,7 +1,7 @@
 import { SoftwareTarget } from "../../AppPreview/MockupFeature/model/MockupFeatureProps";
+import { App, DeploymentTarget } from "../App";
 import { App } from "../App";
 import { isymbolsProduct, notelyProduct } from "../Products";
-
 export const hiddenDesk: App = {
   name: "HiddenDesk",
   shortDescription: "Declutter your mac destop",
@@ -64,7 +64,7 @@ export const hiddenDesk: App = {
     },
   ],
   comments: [],
-  link: "",
+  deployments: [],
   version: "1.0",
   size: "1,4 MB",
   category: "Utility",
