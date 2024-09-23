@@ -1,11 +1,12 @@
 import { SoftwareTarget } from "../../AppPreview/MockupFeature/model/MockupFeatureProps";
 import { App } from "../App";
-import { bodenseeTemperatur } from "./BodenseeTemperatur";
+import { hiddenDeskProduct, notelyProduct } from "../Products";
 
 export const isymbols: App = {
   name: "iSymbols",
   shortDescription: "Icons - easier than ever",
   icon: "/images/Apps/iSymbols/icon.png",
+  inProduction: true,
   pageTitle: "A new way to use SF Symbols on mobile Devices",
   pageSubtitle:
     "Export Apple SF icons to your photo library and integrate them into your designs.",
@@ -68,5 +69,5 @@ export const isymbols: App = {
   size: "1,2 MB",
   category: "Graphics & Design",
   price: 1.99,
-  otherProducts: [bodenseeTemperatur],
+  otherProducts: [hiddenDeskProduct, notelyProduct],
 };

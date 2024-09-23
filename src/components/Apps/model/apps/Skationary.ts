@@ -1,12 +1,12 @@
 import { SoftwareTarget } from "../../AppPreview/MockupFeature/model/MockupFeatureProps";
 import { App } from "../App";
-import { hiddenDesk } from "./HiddenDesk";
-import { isymbols } from "./iSymbols";
+import { bodenseeTemperaturProduct, lindenhofparkProduct } from "../Products";
 
 export const skationary: App = {
   name: "Skationary",
   shortDescription: "All your skatetricks and clips",
   icon: "/images/Apps/Skationary/icon.png",
+  inProduction: false,
   pageTitle: "Your smart progress tracker for skateboarding",
   pageSubtitle:
     "Skationary makes tracking tricks you learn effortless and fun by letting you add video clips and automatically organizing them for you.",
@@ -81,5 +81,5 @@ export const skationary: App = {
   size: "1,6 MB",
   category: "Sports",
   price: 1.99,
-  otherProducts: [isymbols, hiddenDesk],
+  otherProducts: [bodenseeTemperaturProduct, lindenhofparkProduct],
 };

@@ -6,6 +6,7 @@ export interface App {
   name: string;
   shortDescription: string;
   icon: string;
+  inProduction: boolean;
   pageTitle: string;
   pageSubtitle: string;
   previewImages: string[];
@@ -17,5 +18,11 @@ export interface App {
   size: string;
   category: string;
   price: number;
-  otherProducts: App[];
+  otherProducts: Product[];
+}
+
+export interface Product {
+  name: string;
+  icon: string;
+  shortDescription: string;
 }

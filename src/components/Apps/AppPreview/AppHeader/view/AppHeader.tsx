@@ -1,4 +1,5 @@
 import "./AppHeader.css";
+import { CommingSoonButton } from "./CommingSoonButton/CommingSoonButton";
 import downloadBadge from "/images/Apps/Common/AppStoreDownloadBadge.svg";
 
 export function AppHeader({
@@ -6,11 +7,13 @@ export function AppHeader({
   slogan,
   icon,
   link,
+  isProduction,
 }: {
   name: string;
   slogan: string;
   icon: string;
   link: string;
+  isProduction: boolean;
 }) {
   return (
     <div className="box">
@@ -24,13 +27,17 @@ export function AppHeader({
       <p style={{ marginTop: "6px" }} className="text-xl text-muted-foreground">
         {slogan}
       </p>
-      <a href={link} target="_blank" rel="noopener noreferrer">
-        <img
-          className="downloadBadge"
-          src={downloadBadge}
-          alt="Download from App Store"
-        />
-      </a>
+      {isProduction ? (
+        <a href={link} target="_blank" rel="noopener noreferrer">
+          <img
+            className="downloadBadge"
+            src={downloadBadge}
+            alt="Download from App Store"
+          />
+        </a>
+      ) : (
+        <CommingSoonButton></CommingSoonButton>
+      )}
     </div>
   );
 }

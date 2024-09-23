@@ -5,6 +5,12 @@
   max-width: 1014px;
 }
 
+:root {
+  --licorice: #1b1212;
+  --gray: #868686;
+  --secondary: #afafaf;
+}
+
 .grey-box {
   background-color: #f0f0f0;
   padding: 40px 0 40px 0;

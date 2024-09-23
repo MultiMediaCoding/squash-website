@@ -1,12 +1,12 @@
 import { SoftwareTarget } from "../../AppPreview/MockupFeature/model/MockupFeatureProps";
 import { App } from "../App";
-import { bodenseeTemperatur } from "./BodenseeTemperatur";
-import { skationary } from "./Skationary";
+import { hiddenDeskProduct, isymbolsProduct } from "../Products";
 
 export const itask: App = {
   name: "iTask",
   shortDescription: "Focus-Boosting To-Dos",
   icon: "/images/Apps/iTask/icon.png",
+  inProduction: false,
   pageTitle: "Regain focus over your daily tasks",
   pageSubtitle:
     "iTask is a sleek to-do list app that lets you easily organize and customize your tasks. Keep track of what’s done.",
@@ -61,5 +61,5 @@ export const itask: App = {
   size: "1,4 MB",
   category: "Productivity",
   price: 0.99,
-  otherProducts: [skationary, bodenseeTemperatur],
+  otherProducts: [isymbolsProduct, hiddenDeskProduct],
 };

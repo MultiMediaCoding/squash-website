@@ -1,0 +1,9 @@
+.comming-soon-button {
+  width: 160px;
+  padding: 6px;
+  color: white;
+  background-color: var(--licorice);
+
+  border-radius: 100rem;
+  margin: 20px auto;
+}
