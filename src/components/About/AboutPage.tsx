@@ -16,15 +16,10 @@ export function AboutPage() {
         About
       </h1>
       <p className="text-xl text-muted-foreground">
-        Welcome to our company! We are a passionate team dedicated to delivering
-        exceptional products and services to our customers. Our mission is to
-        innovate, inspire, and exceed expectations in everything we do. We
-        believe in the power of creativity, collaboration, and commitment to
-        quality. With a focus on customer satisfaction, we strive to build
-        long-lasting relationships and make a positive impact in our industry.
-        Whether you’re a long-time supporter or new to our community, we’re
-        excited to have you with us on this journey. Thank you for being a part
-        of our story!
+      Squash was founded in 2024 by Hans Poreda and Lovis Steinmayer. Our passion for software became apparent early on: we constantly gained new experience through smaller software projects. 
+      To further professionalize ourselves, we decided to found our own company. Our conviction is to develop user-oriented, intuitively functioning software that has a tangible impact on our environment 
+      and the way things are done. We integrate topics that move us, such as sustainability, sport and technology, into our work. To make our software as seamlessly as possible, we rely on native components 
+      that are optimally adapted to the device and the user.
       </p>
       <div className="aboutPagePhotos">
         <AboutPhoto image={founders} subtitle="Hans & Lovis 2016"></AboutPhoto>
