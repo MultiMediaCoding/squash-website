@@ -1,6 +1,5 @@
 import { SoftwareTarget } from "../../AppPreview/MockupFeature/model/MockupFeatureProps";
 import { App, DeploymentTarget } from "../App";
-import { bodenseeTemperatur } from "./BodenseeTemperatur";
 import { bodenseeTemperaturProduct } from "../Products";
 
 export const lindenhofpark: App = {

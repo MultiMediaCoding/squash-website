@@ -1,8 +1,7 @@
-import { Deployment, DeploymentTarget } from "../../../model/App";
+import { Deployment } from "../../../model/App";
 import { DownloadBadges } from "../../DownloadBadge/DownloadBadges";
 import "./AppHeader.css";
 import { CommingSoonButton } from "./CommingSoonButton/CommingSoonButton";
-import downloadBadge from "/images/Apps/Common/AppStoreDownloadBadge.svg";
 
 export function AppHeader({
   name,
@@ -30,9 +29,9 @@ export function AppHeader({
         {slogan}
       </p>
       {isProduction ? (
-            <div className="deployment-badges">
-    <DownloadBadges deployments={deployments}></DownloadBadges>
-    </div>
+        <div className="deployment-badges">
+          <DownloadBadges deployments={deployments}></DownloadBadges>
+        </div>
       ) : (
         <CommingSoonButton></CommingSoonButton>
       )}

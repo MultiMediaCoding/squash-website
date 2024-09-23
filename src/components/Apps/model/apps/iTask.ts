@@ -1,7 +1,5 @@
 import { SoftwareTarget } from "../../AppPreview/MockupFeature/model/MockupFeatureProps";
-import { App, DeploymentTarget } from "../App";
-import { bodenseeTemperatur } from "./BodenseeTemperatur";
-import { skationary } from "./Skationary";
+import { App } from "../App";
 import { hiddenDeskProduct, isymbolsProduct } from "../Products";
 
 export const itask: App = {

@@ -1,6 +1,5 @@
 import { SoftwareTarget } from "../../AppPreview/MockupFeature/model/MockupFeatureProps";
 import { App, DeploymentTarget } from "../App";
-import { bodenseeTemperatur } from "./BodenseeTemperatur";
 import { hiddenDeskProduct, notelyProduct } from "../Products";
 
 export const isymbols: App = {
