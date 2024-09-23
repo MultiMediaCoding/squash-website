@@ -2,7 +2,6 @@ import { SoftwareTarget } from "../../AppPreview/MockupFeature/model/MockupFeatu
 import { App, DeploymentTarget } from "../App";
 import { isymbols } from "./iSymbols";
 import { skationary } from "./Skationary";
-import { App } from "../App";
 import { hiddenDeskProduct, isymbolsProduct } from "../Products";
 
 export const notely: App = {
@@ -71,7 +70,8 @@ export const notely: App = {
     },
   ],
   comments: [],
-  deployments: [],  version: "1.0",
+  deployments: [],
+  version: "1.0",
   size: "645 KB",
   category: "Utility",
   price: 0.99,

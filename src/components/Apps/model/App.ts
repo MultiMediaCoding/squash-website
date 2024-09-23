@@ -21,15 +21,9 @@ export interface App {
   otherProducts: Product[];
 }
 
-export interface Product {
-  name: string;
-  icon: string;
-  shortDescription: string;
-}
-
 export interface Deployment {
-  link: string
-  target: DeploymentTarget
+  link: string;
+  target: DeploymentTarget;
 }
 
 export enum DeploymentTarget {
@@ -40,5 +34,11 @@ export enum DeploymentTarget {
   tvOS = "tvOS",
   macOS = "macOS",
   visionOS = "visionOS",
-  web = "web"
+  web = "web",
+}
+
+export interface Product {
+  name: string;
+  icon: string;
+  shortDescription: string;
 }

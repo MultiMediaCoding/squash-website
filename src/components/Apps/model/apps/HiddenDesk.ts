@@ -1,6 +1,5 @@
 import { SoftwareTarget } from "../../AppPreview/MockupFeature/model/MockupFeatureProps";
 import { App, DeploymentTarget } from "../App";
-import { App } from "../App";
 import { isymbolsProduct, notelyProduct } from "../Products";
 export const hiddenDesk: App = {
   name: "HiddenDesk",

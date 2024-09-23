@@ -1,7 +1,6 @@
 import { SoftwareTarget } from "../../AppPreview/MockupFeature/model/MockupFeatureProps";
 import { App, DeploymentTarget } from "../App";
 import { bodenseeTemperatur } from "./BodenseeTemperatur";
-import { App } from "../App";
 import { hiddenDeskProduct, notelyProduct } from "../Products";
 
 export const isymbols: App = {
@@ -66,7 +65,12 @@ export const isymbols: App = {
     },
   ],
   comments: [],
-  deployments: [{link: "https://apps.apple.com/de/app/isymbols/id6451404922", target: DeploymentTarget.iOS}],
+  deployments: [
+    {
+      link: "https://apps.apple.com/de/app/isymbols/id6451404922",
+      target: DeploymentTarget.iOS,
+    },
+  ],
   version: "1.1",
   size: "1,2 MB",
   category: "Graphics & Design",
