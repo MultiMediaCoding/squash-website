@@ -1,10 +1,12 @@
 import { SoftwareTarget } from "../../AppPreview/MockupFeature/model/MockupFeatureProps";
 import { App, DeploymentTarget } from "../App";
-
+import { App } from "../App";
+import { isymbolsProduct, notelyProduct } from "../Products";
 export const hiddenDesk: App = {
   name: "HiddenDesk",
   shortDescription: "Declutter your mac destop",
   icon: "/images/Apps/HiddenDesk/icon.png",
+  inProduction: false,
   pageTitle: "Hidden Desk makes it easy to let your mac shine",
   pageSubtitle:
     "Keeps your Mac desktop tidy and hides all folders and documents with just a Mousecklick.",
@@ -67,5 +69,5 @@ export const hiddenDesk: App = {
   size: "1,4 MB",
   category: "Utility",
   price: 1.99,
-  otherProducts: [],
+  otherProducts: [notelyProduct, isymbolsProduct],
 };

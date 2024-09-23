@@ -2,11 +2,14 @@ import { SoftwareTarget } from "../../AppPreview/MockupFeature/model/MockupFeatu
 import { App, DeploymentTarget } from "../App";
 import { isymbols } from "./iSymbols";
 import { skationary } from "./Skationary";
+import { App } from "../App";
+import { hiddenDeskProduct, isymbolsProduct } from "../Products";
 
 export const notely: App = {
   name: "Notely",
   shortDescription: "Ntfy push notifications",
   icon: "/images/Apps/Notely/icon.png",
+  inProduction: true,
   pageTitle: "Instant notifications for your Mac",
   pageSubtitle:
     "Receive real-time data via the Ntfy API, displayed as native push notifications on your Mac.",
@@ -72,5 +75,5 @@ export const notely: App = {
   size: "645 KB",
   category: "Utility",
   price: 0.99,
-  otherProducts: [isymbols, skationary],
+  otherProducts: [isymbolsProduct, hiddenDeskProduct],
 };

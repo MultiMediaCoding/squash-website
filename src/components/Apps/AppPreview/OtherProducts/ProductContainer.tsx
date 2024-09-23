@@ -1,27 +1,22 @@
-import { useNavigate } from "react-router-dom";
-import { App } from "../../model/App";
 import "./ProductContainer.css";
+import { Link } from "react-router-dom";
+import { Product } from "../../model/App";
 
-export function ProductContainer({ app }: { app: App }) {
-  const navigate = useNavigate();
-  const goToAppPage = () => {
-    navigate(`/apps/${app.name}`, { state: { app: app } });
-  };
-
+export function ProductContainer({ product }: { product: Product }) {
   return (
-    <button onClick={goToAppPage}>
+    <Link to={`/apps/${product.name}`}>
       <div className={"productContainer"}>
-        <img src={app.icon} className={"appIcon"} />
+        <img src={product.icon} className={"appIcon"} />
         <div>
-          <div className="text-lg font-semibold">{app.name}</div>
+          <div className="text-lg font-semibold">{product.name}</div>
           <p
             style={{ color: "#AFAFAF", marginTop: "-4px" }}
             className="text-sm font-regular"
           >
-            {app.shortDescription}
+            {product.shortDescription}
           </p>
         </div>
       </div>
-    </button>
+    </Link>
   );
 }

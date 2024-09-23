@@ -29,7 +29,10 @@ export function AppPreviewPage({ app }: { app: App }) {
         slogan={app.shortDescription}
         icon={app.icon}
         deployments={app.deployments}
+        
+        isProduction={app.inProduction}
         ></AppHeader>
+      ></AppHeader>
       <br></br>
       <br></br>
       <br></br>

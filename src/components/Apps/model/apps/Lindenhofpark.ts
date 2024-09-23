@@ -1,11 +1,14 @@
 import { SoftwareTarget } from "../../AppPreview/MockupFeature/model/MockupFeatureProps";
 import { App, DeploymentTarget } from "../App";
 import { bodenseeTemperatur } from "./BodenseeTemperatur";
+import { App } from "../App";
+import { bodenseeTemperaturProduct } from "../Products";
 
 export const lindenhofpark: App = {
   name: "Lindenhofpark",
   shortDescription: "Discover regional nature and culture",
   icon: "/images/Apps/Lindenhofpark/icon.png",
+  inProduction: true,
   pageTitle: "Experience Lindenhof Park in a Digital App Journey",
   pageSubtitle:
     "Discover Lindenhof Park’s trees and historical landmarks with detailed info, images, and an interactive map.",
@@ -101,5 +104,5 @@ export const lindenhofpark: App = {
   size: "263,3 MB",
   category: "Reference",
   price: 0.0,
-  otherProducts: [bodenseeTemperatur],
+  otherProducts: [bodenseeTemperaturProduct],
 };

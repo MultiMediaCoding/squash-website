@@ -1,10 +1,13 @@
 import { SoftwareTarget } from "../../AppPreview/MockupFeature/model/MockupFeatureProps";
 import { App, DeploymentTarget } from "../App";
+import { App } from "../App";
+import { lindenhofparkProduct } from "../Products";
 
 export const bodenseeTemperatur: App = {
   name: "Bodensee Temperatur",
   shortDescription: "Minimalistic lake measurements",
   icon: "/images/Apps/BodenseeTemperatur/icon.png",
+  inProduction: false,
   pageTitle: "Lake Constance Temperature at a Glance",
   pageSubtitle: "Instantly access real-time lake temperatures, daily trends, and historical data with a minimalistic, visual interface.",
   previewImages: [
@@ -62,5 +65,5 @@ export const bodenseeTemperatur: App = {
   size: "1,2 MB",
   category: "Graphics & Design",
   price: 1.99,
-  otherProducts: [],
+  otherProducts: [lindenhofparkProduct],
 };
