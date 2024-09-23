@@ -1,5 +1,5 @@
 import { SoftwareTarget } from "../../AppPreview/MockupFeature/model/MockupFeatureProps";
-import { App } from "../App";
+import { App, DeploymentTarget } from "../App";
 
 export const hiddenDesk: App = {
   name: "HiddenDesk",
@@ -62,7 +62,7 @@ export const hiddenDesk: App = {
     },
   ],
   comments: [],
-  link: "",
+  deployments: [],
   version: "1.0",
   size: "1,4 MB",
   category: "Utility",

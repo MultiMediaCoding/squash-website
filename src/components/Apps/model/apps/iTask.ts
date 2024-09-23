@@ -1,5 +1,5 @@
 import { SoftwareTarget } from "../../AppPreview/MockupFeature/model/MockupFeatureProps";
-import { App } from "../App";
+import { App, DeploymentTarget } from "../App";
 import { bodenseeTemperatur } from "./BodenseeTemperatur";
 import { skationary } from "./Skationary";
 
@@ -56,7 +56,7 @@ export const itask: App = {
     },
   ],
   comments: [],
-  link: "",
+  deployments: [],
   version: "1.0",
   size: "1,4 MB",
   category: "Productivity",

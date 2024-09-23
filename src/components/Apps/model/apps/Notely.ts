@@ -1,5 +1,5 @@
 import { SoftwareTarget } from "../../AppPreview/MockupFeature/model/MockupFeatureProps";
-import { App } from "../App";
+import { App, DeploymentTarget } from "../App";
 import { isymbols } from "./iSymbols";
 import { skationary } from "./Skationary";
 
@@ -68,8 +68,7 @@ export const notely: App = {
     },
   ],
   comments: [],
-  link: "https://apps.apple.com/de/app/notely/id6477283566?mt=12",
-  version: "1.0",
+  deployments: [],  version: "1.0",
   size: "645 KB",
   category: "Utility",
   price: 0.99,

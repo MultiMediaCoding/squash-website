@@ -1,5 +1,5 @@
 import { SoftwareTarget } from "../../AppPreview/MockupFeature/model/MockupFeatureProps";
-import { App } from "../App";
+import { App, DeploymentTarget } from "../App";
 import { bodenseeTemperatur } from "./BodenseeTemperatur";
 
 export const lindenhofpark: App = {
@@ -96,8 +96,8 @@ export const lindenhofpark: App = {
       rating: 5,
     },
   ],
-  link: "https://apps.apple.com/de/app/lindenhofpark/id6477407985",
   version: "1.0",
+  deployments: [{link: "https://apps.apple.com/de/app/lindenhofpark/id6477407985", target: DeploymentTarget.iOS}, {link: "https://play.google.com/store/apps/details?id=com.drinke.lindenhofpark&pcampaignid=web_share", target: DeploymentTarget.android}],
   size: "263,3 MB",
   category: "Reference",
   price: 0.0,

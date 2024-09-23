@@ -28,8 +28,8 @@ export function AppPreviewPage({ app }: { app: App }) {
         name={app.name}
         slogan={app.shortDescription}
         icon={app.icon}
-        link={app.link}
-      ></AppHeader>
+        deployments={app.deployments}
+        ></AppHeader>
       <br></br>
       <br></br>
       <br></br>
