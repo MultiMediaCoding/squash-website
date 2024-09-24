@@ -10,6 +10,13 @@ export function Footer() {
           Legal
         </h3>
         <a
+          href="/credits"
+          target="_blank"
+          className="text-xl text-muted-foreground gray-link"
+        >
+          Credits
+        </a>
+        <a
           href="/impressum"
           target="_blank"
           className="text-xl text-muted-foreground gray-link"

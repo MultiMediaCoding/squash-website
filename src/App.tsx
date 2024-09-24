@@ -7,8 +7,9 @@ import { AppsPage } from "./components/Apps/AppsPage/AppsPage";
 import { AppPreviewPage } from "./components/Apps/AppPreview/view/AppPreviewPage";
 import { apps } from "./components/Apps/model/Apps";
 import ScrollToTop from "./components/Common/ScrollToTop";
-import { Datenschutzbestimmungen } from "./components/Datenschutzbestimmungen/Datenschutzbestimmungen";
 import { Home } from "./components/Home/Home";
+import { Datenschutzbestimmungen } from "./components/Common/Datenschutzbestimmungen/Datenschutzbestimmungen";
+import { Credits } from "./components/Common/Credits/Credits";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/apps" element={<AppsPage />} />
           <Route path="/support" element={<SupportPage />} />
           <Route path="/about" element={<AboutPage />} />
+          <Route path="/credits" element={<Credits />} />
           <Route path="/impressum" element={<Impressum />} />
           <Route path="/datenschutz" element={<Datenschutzbestimmungen />} />
           {apps.map((app) => (
