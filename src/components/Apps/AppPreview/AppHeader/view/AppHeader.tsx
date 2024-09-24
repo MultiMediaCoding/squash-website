@@ -1,7 +1,7 @@
 import { Deployment } from "../../../model/App";
 import { DownloadBadges } from "../../DownloadBadge/DownloadBadges";
 import "./AppHeader.css";
-import { CommingSoonButton } from "./CommingSoonButton/CommingSoonButton";
+import { ComingSoonButton } from "./ComingSoonButton/ComingSoonButton";
 
 export function AppHeader({
   name,
@@ -33,7 +33,7 @@ export function AppHeader({
           <DownloadBadges deployments={deployments}></DownloadBadges>
         </div>
       ) : (
-        <CommingSoonButton></CommingSoonButton>
+        <ComingSoonButton />
       )}
     </div>
   );

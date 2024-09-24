@@ -1,19 +1,18 @@
 .badges-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-  }
-  
-  .downloadBadge {
-    height: 50px;
-    width: auto;
-    margin-top: 35px;
-  }
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
 
-  .badges-row {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 20px;
-    
-  }
+.downloadBadge {
+  height: 50px;
+  width: auto;
+  margin-top: 35px;
+}
+
+.badges-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
