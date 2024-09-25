@@ -1,5 +1,6 @@
 import { Deployment, DeploymentTarget } from "../../model/App";
 import appStoreDownloadBadge from "/images/Apps/Common/AppStoreDownloadBadge.svg";
+import macAppStoreDownloadBadge from "/images/Apps/Common/AppStoreMacDownloadBadge.svg";
 import playStoreDownloadBadge from "/images/Apps/Common/GooglePlayStoreDownloadBadge.svg";
 import "./DownloadBadges.css"
 
@@ -17,6 +18,16 @@ export function DownloadBadges({
               className="downloadBadge"
               src={appStoreDownloadBadge}
               alt="Download from App Store"
+            />
+          </a>
+        ) : null}
+
+{deployment.target == DeploymentTarget.macOS ? (
+          <a href={deployment.link} target="_blank" rel="noopener noreferrer">
+            <img
+              className="downloadBadge"
+              src={macAppStoreDownloadBadge}
+              alt="Download from mac AppStore"
             />
           </a>
         ) : null}

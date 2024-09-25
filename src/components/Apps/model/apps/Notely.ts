@@ -1,5 +1,5 @@
 import { SoftwareTarget } from "../../AppPreview/MockupFeature/model/MockupFeatureProps";
-import { App } from "../App";
+import { App, DeploymentTarget } from "../App";
 import { hiddenDeskProduct, isymbolsProduct } from "../Products";
 
 export const notely: App = {
@@ -68,7 +68,12 @@ export const notely: App = {
     },
   ],
   comments: [],
-  deployments: [],
+  deployments: [
+    {
+      link: "https://apps.apple.com/de/app/notely/id6477283566?mt=12",
+      target: DeploymentTarget.macOS,
+    },
+  ],
   version: "1.0",
   size: "645 KB",
   category: "Utility",
