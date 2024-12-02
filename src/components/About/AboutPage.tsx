@@ -1,8 +1,8 @@
 import "./AboutPage.css";
 import "./AboutPhoto.css";
 
-import founders from "/images/About/founders.jpeg";
-import founders2 from "/images/About/founders2.jpeg";
+import hans from "/images/About/Hans.jpeg";
+import lovis from "/images/About/Lovis.jpeg";
 import { AboutPhoto } from "./AboutPhoto";
 import { NavigationBar } from "../Navigation/NavigationBar";
 import { Footer } from "../Home/Footer/Footer";
@@ -16,14 +16,20 @@ export function AboutPage() {
         About
       </h1>
       <p className="text-xl text-muted-foreground">
-      Squash was founded in 2024 by Hans Poreda and Lovis Steinmayer. Our passion for software became apparent early on: we constantly gained new experience through smaller software projects. 
-      To further professionalize ourselves, we decided to found our own company. Our conviction is to develop user-oriented, intuitively functioning software that has a tangible impact on our environment 
-      and the way things are done. We integrate topics that move us, such as sustainability, sport and technology, into our work. To make our software as seamlessly as possible, we rely on native components 
-      that are optimally adapted to the device and the user.
+        Squash was founded in 2024 by Hans Poreda and Lovis Steinmayer. Our
+        passion for software became apparent early on: we constantly gained new
+        experience through smaller software projects. To further professionalize
+        ourselves, we decided to found our own company. Our conviction is to
+        develop user-oriented, intuitively functioning software that has a
+        tangible impact on our environment and the way things are done. We
+        integrate topics that move us, such as sustainability, sport and
+        technology, into our work. To make our software as seamlessly as
+        possible, we rely on native components that are optimally adapted to the
+        device and the user.
       </p>
       <div className="aboutPagePhotos">
-        <AboutPhoto image={founders} subtitle="Hans & Lovis 2016"></AboutPhoto>
-        <AboutPhoto image={founders2} subtitle="Hans & Lovis 2024"></AboutPhoto>
+        <AboutPhoto image={hans} subtitle="Hans"></AboutPhoto>
+        <AboutPhoto image={lovis} subtitle="Lovis"></AboutPhoto>
       </div>
       <br></br>
       <br></br>
