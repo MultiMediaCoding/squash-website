@@ -49,7 +49,7 @@ export const Impressum: React.FC = () => {
         <p className="text-xl text-muted-foreground">
           Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:
           <br />
-          DE999999999
+          DE424104539
         </p>
 
         <h2 className="mt-10 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0">
