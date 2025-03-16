@@ -1,6 +1,7 @@
 import React from "react";
 import "./Impressum.css";
 import { NavigationBar } from "../Navigation/NavigationBar";
+import { Footer } from "../Home/Footer/Footer";
 
 export const Impressum: React.FC = () => {
   return (
@@ -72,6 +73,9 @@ export const Impressum: React.FC = () => {
           </a>
         </p>
       </div>
+      <br />
+      <br />
+      <Footer />
     </div>
   );
 };

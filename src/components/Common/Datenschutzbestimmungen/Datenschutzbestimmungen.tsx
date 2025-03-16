@@ -1,8 +1,8 @@
 import React from "react";
 import "./Datenschutzbestimmungen.css";
-import { InfoElement } from "../InfoElement/InfoElement"
+import { InfoElement } from "../InfoElement/InfoElement";
 import { NavigationBar } from "../../Navigation/NavigationBar";
-
+import { Footer } from "../../Home/Footer/Footer";
 
 export const Datenschutzbestimmungen: React.FC = () => {
   return (
@@ -304,6 +304,9 @@ export const Datenschutzbestimmungen: React.FC = () => {
         Device-Fingerprinting) eingewilligt haben, erfolgt die Datenverarbeitung
         zusätzlich auf Grundlage von §.
       </p>
+      <br />
+      <br />
+      <Footer />
     </div>
   );
 };

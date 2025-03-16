@@ -39,3 +39,9 @@ export const skationaryProduct = {
   shortDescription: "All your skatetricks and clips",
   icon: "/images/Apps/Skationary/icon.png",
 };
+
+export const loipenProduct = {
+  name: "Loipen",
+  shortDescription: "All your skatetricks and clips",
+  icon: "/images/Apps/Loipen/icon.png",
+};
