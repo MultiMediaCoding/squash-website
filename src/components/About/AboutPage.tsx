@@ -1,7 +1,7 @@
 import "./AboutPage.css";
 import "./AboutPhoto.css";
 
-import hans from "/images/About/Hans.png";
+import hans from "/images/About/Hans.jpeg";
 import lovis from "/images/About/Lovis.jpeg";
 import { AboutPhoto } from "./AboutPhoto";
 import { NavigationBar } from "../Navigation/NavigationBar";
