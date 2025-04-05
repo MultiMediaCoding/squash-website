@@ -1,4 +1,3 @@
-import { UUID } from "crypto";
 import "./Comment.css";
 
 const stars = new Map([
@@ -10,7 +9,7 @@ const stars = new Map([
 ]);
 
 export interface Comment {
-  id: UUID;
+  id: string;
   title: string;
   description: string;
   rating: number;
