@@ -1,17 +1,12 @@
 import { UUID } from "crypto";
 import "./Comment.css";
-import star1 from "/images/stars/stars.1.svg";
-import star2 from "/images/stars/stars.2.svg";
-import star3 from "/images/stars/stars.3.svg";
-import star4 from "/images/stars/stars.4.svg";
-import star5 from "/images/stars/stars.5.svg";
 
 const stars = new Map([
-  [1, star1],
-  [2, star2],
-  [3, star3],
-  [4, star4],
-  [5, star5],
+  [1, "/images/stars/stars.1.svg"],
+  [2, "/images/stars/stars.2.svg"],
+  [3, "/images/stars/stars.3.svg"],
+  [4, "/images/stars/stars.4.svg"],
+  [5, "/images/stars/stars.5.svg"],
 ]);
 
 export interface Comment {

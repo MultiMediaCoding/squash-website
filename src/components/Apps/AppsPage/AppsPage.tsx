@@ -28,7 +28,7 @@ export function AppsPage() {
 
       <div className={"appsGrid"}>
         {apps.map((app) => (
-          <AppContainer app={app}></AppContainer>
+          <AppContainer key={app.name} app={app}></AppContainer>
         ))}
       </div>
 

@@ -1,8 +1,6 @@
 import "./AboutPage.css";
 import "./AboutPhoto.css";
 
-import hans from "/images/About/Hans.jpeg";
-import lovis from "/images/About/Lovis.jpeg";
 import { AboutPhoto } from "./AboutPhoto";
 import { NavigationBar } from "../Navigation/NavigationBar";
 import { Footer } from "../Home/Footer/Footer";
@@ -28,8 +26,14 @@ export function AboutPage() {
         device and the user.
       </p>
       <div className="aboutPagePhotos">
-        <AboutPhoto image={hans} subtitle="Hans"></AboutPhoto>
-        <AboutPhoto image={lovis} subtitle="Lovis"></AboutPhoto>
+        <AboutPhoto
+          image={"/images/About/Hans.jpeg"}
+          subtitle="Hans"
+        ></AboutPhoto>
+        <AboutPhoto
+          image={"/images/About/Lovis.jpeg"}
+          subtitle="Lovis"
+        ></AboutPhoto>
       </div>
       <br></br>
       <br></br>

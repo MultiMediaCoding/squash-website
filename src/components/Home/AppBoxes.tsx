@@ -2,12 +2,10 @@ import { CSSProperties } from "react";
 import { isymbols } from "../Apps/model/apps/iSymbols";
 import { skationary } from "../Apps/model/apps/Skationary";
 import { PresentationBox } from "../Common/PresentationBox/PresentationBox";
-import isymbolsMockup from "/images/Home/iSymbolsMockup.png";
-import skationaryMockup from "/images/Home/SkationaryMockup.png";
 
 const cards = [
   {
-    image: isymbolsMockup,
+    image: "/images/Home/iSymbolsMockup.png",
     title: "iSymbols for iOS",
     subtitle: "Your companion for Icon Design",
     description: "Effortlessly craft stunning icons using Apple's SF Symbols.",
@@ -15,7 +13,7 @@ const cards = [
     alignItems: "left",
   },
   {
-    image: skationaryMockup,
+    image: "/images/Home/SkationaryMockup.png",
     title: "Skationary",
     subtitle: "Your smart progress tracker for skateboarding",
     description:
@@ -30,6 +28,7 @@ export function AppBoxes() {
     <div>
       {cards.map((card) => (
         <PresentationBox
+          key={card.title}
           image={card.image}
           title={card.title}
           subtitle={card.subtitle}
