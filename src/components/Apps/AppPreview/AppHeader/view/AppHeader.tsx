@@ -19,10 +19,8 @@ export function AppHeader({
   return (
     <div className="box">
       <img className={"icon"} src={icon}></img>
-      <h1
-        style={{ marginTop: "29px" }}
-        className="scroll-m-20 text-4xl font-bold tracking-tight lg:text-5xl"
-      >
+
+      <h1 style={{ marginTop: "29px" }} className="text-4xl font-bold">
         {name}
       </h1>
       <p style={{ marginTop: "6px" }} className="text-xl text-muted-foreground">

@@ -45,9 +45,7 @@ export function PresentationBox({
       ) : null}
 
       <div className="content">
-        <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
-          {title}
-        </h1>
+        <h1 className="text-4xl font-bold">{title}</h1>
         <div>
           <div className="text-lg font-semibold">{subtitle}</div>
           <p className="text-sm text-muted-foreground">{description}</p>

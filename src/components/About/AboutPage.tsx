@@ -10,9 +10,7 @@ export function AboutPage() {
     <div className="text">
       <NavigationBar></NavigationBar>
       <br></br>
-      <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
-        About
-      </h1>
+      <h1 className="text-4xl font-bold">About</h1>
       <p className="text-xl text-muted-foreground">
         Squash was founded in 2024 by Hans Poreda and Lovis Steinmayer. Our
         passion for software became apparent early on: we constantly gained new

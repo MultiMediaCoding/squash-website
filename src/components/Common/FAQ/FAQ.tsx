@@ -25,9 +25,7 @@ export function FAQ() {
 
   return (
     <div>
-      <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
-        FAQ
-      </h1>
+      <h1 className="text-4xl font-bold">FAQ</h1>
       <Accordion type="single" collapsible>
         <AccordionItem value="item-1">
           <AccordionTrigger className="accordion-trigger">
@@ -43,7 +41,7 @@ export function FAQ() {
         </AccordionItem>
 
         <AccordionItem value="item-2">
-        <AccordionTrigger className="accordion-trigger">
+          <AccordionTrigger className="accordion-trigger">
             What does it mean that you develop native applications?
           </AccordionTrigger>
           <AccordionContent className="accordion-content">
@@ -55,7 +53,7 @@ export function FAQ() {
         </AccordionItem>
 
         <AccordionItem value="item-3">
-        <AccordionTrigger className="accordion-trigger">
+          <AccordionTrigger className="accordion-trigger">
             How can I contact you if I am interested in your software?
           </AccordionTrigger>
           <AccordionContent className="accordion-content">
@@ -69,7 +67,7 @@ export function FAQ() {
         </AccordionItem>
 
         <AccordionItem value="item-4">
-        <AccordionTrigger className="accordion-trigger">
+          <AccordionTrigger className="accordion-trigger">
             Who can benefit from using your apps?
           </AccordionTrigger>
           <AccordionContent className="accordion-content">

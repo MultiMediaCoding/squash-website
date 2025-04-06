@@ -10,9 +10,7 @@ export const Impressum: React.FC = () => {
       <br></br>
       <br></br>
       <div className="impressumText">
-        <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
-          Impressum
-        </h1>
+        <h1 className="text-4xl font-bold">Impressum</h1>
         <p className="text-xl text-muted-foreground">
           Hans Poreda &amp; Lovis Steinmayer Softwareentwicklung GbR
           <br />

@@ -5,6 +5,8 @@
   flex-direction: column;
   background-color: #f0f0f0;
   border-radius: 10px;
+
+  text-align: center;
 }
 
 @media (max-width: 1014px) {

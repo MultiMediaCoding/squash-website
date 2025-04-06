@@ -11,9 +11,7 @@ export function AppsPage() {
 
       <br></br>
       <div className={"appsHeader"}>
-        <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
-          Apps
-        </h1>
+        <h1 className="text-4xl font-bold">Apps</h1>
         <p
           style={{
             fontSize: 18,
