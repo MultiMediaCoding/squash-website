@@ -1,5 +1,4 @@
 import "./AboutPage.css";
-import "./AboutPhoto.css";
 
 import { AboutPhoto } from "./AboutPhoto";
 import { NavigationBar } from "../Navigation/NavigationBar";
@@ -25,12 +24,8 @@ export function AboutPage() {
       </p>
       <div className="aboutPagePhotos">
         <AboutPhoto
-          image={"/images/About/Hans.jpeg"}
-          subtitle="Hans"
-        ></AboutPhoto>
-        <AboutPhoto
-          image={"/images/About/Lovis.jpeg"}
-          subtitle="Lovis"
+          image={"/images/About/Hans und Lovis.jpeg"}
+          subtitle="Hans und Lovis, 2025"
         ></AboutPhoto>
       </div>
       <br></br>

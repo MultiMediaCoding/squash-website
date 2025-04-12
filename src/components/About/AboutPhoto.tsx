@@ -1,8 +1,14 @@
-
-export function AboutPhoto({image, subtitle}: {image: string, subtitle: string}) {
-    return (
-        <div>
-        <img className={"aboutPhotoImg"} src={image} alt={subtitle} />
-        <p style={{ marginTop: '7px', fontSize: '13px' }} className="text-sm text-muted-foreground">{subtitle}</p>          </div>
-    )
+export function AboutPhoto({
+  image,
+  subtitle,
+}: {
+  image: string;
+  subtitle: string;
+}) {
+  return (
+    <div>
+      <img className="rounded-xl" src={image} alt={subtitle} />
+      <p className="mt-2 text-xs text-muted-foreground">{subtitle}</p>
+    </div>
+  );
 }
